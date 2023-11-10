@@ -72,7 +72,7 @@ class TableController extends controller
 
         $tableFields = implode(', ', $fields);
 
-        DB::statement("CREATE TABLE " . $data['name'] . " ($tableFields)");
+        DB::statement("CREATE TABLE `" . $data['name'] . "` ($tableFields)");
 
         return redirect()->route('tables.index');
     }
@@ -122,7 +122,7 @@ class TableController extends controller
 
         return redirect()->route('tables.index');
     }
-    
+
     public function removeDuplicates(Table $table)
     {
         $table_name = $table->name;
