@@ -20,8 +20,37 @@ use Symfony\Component\Finder\Iterator\FilecontentFilterIterator;
 */
 
 Auth::routes([
-    'register'=>false
+    'register' => false
 ]);
+Route::get('t', function () {
+    // Input and output file paths
+    $inputFile = 'input.csv';
+    $outputFile = 'output.csv';
+
+    // Read the input CSV file
+    $rows = array_map('str_getcsv', file($inputFile));
+
+    // Output CSV file header
+    $outputHeader = ['phone'];
+
+    // Initialize the output data array
+    $outputData = [$outputHeader];
+
+    // Iterate through each row and extract the "phone" column
+    foreach ($rows as $row) {
+        $phone = $row[0]; // Assuming "phone" is the first column (index 0)
+        $outputData[] = [$phone];
+    }
+
+    // Write the output data to the new CSV file
+    $fp = fopen($outputFile, 'w');
+    foreach ($outputData as $fields) {
+        fputcsv($fp, $fields);
+    }
+    fclose($fp);
+
+    echo "Output CSV file created successfully.\n";
+});
 Route::middleware('auth')->group(function () {
 
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

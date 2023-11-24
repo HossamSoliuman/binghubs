@@ -13,6 +13,8 @@ use Illuminate\Database\Schema\Builder;
 class MatchController extends Controller
 {
     use ManagesFiles;
+
+    
     public function matchCSVWithDatabase(Request $request)
     {
         $selectedTable = $request->input('table');
@@ -22,54 +24,56 @@ class MatchController extends Controller
         $inputFileName = pathinfo($inputFile, PATHINFO_FILENAME);
         $outputFileName = $inputFileName . '_output.csv';
         $outputDirectory = public_path('files/output');
-    
+
         if (!File::exists($outputDirectory)) {
             File::makeDirectory($outputDirectory);
         }
         $outputCsvFilePath = $outputDirectory . '/' . $outputFileName;
         $outputCsvData = [];
-    
+
         // Get the header row from the CSV and database fields from the table
         $headerRow = array_shift($csvData);
         $dbFields = DB::getSchemaBuilder()->getColumnListing($selectedTable);
         $dbFields = array_filter($dbFields, function ($field) {
             return $field !== 'id';
         });
-    
+
         // Loop through CSV data and match with database records
         foreach ($csvData as $rowData) {
             $outputRow = [];
             $outputRow[] = $rowData[0];
-    
+
             $whereClause = [];
             foreach ($headerRow as $field) {
                 $whereClause[] = [$field, $rowData[array_search($field, $headerRow)]];
             }
-    
+
             // Use first() to retrieve a single record, if it exists
-            $record = DB::table($selectedTable)
+            $records = DB::table($selectedTable)
                 ->select($dbFields)
                 ->where($whereClause)
-                ->first();
-    
-            if ($record) {
-                $outputRow = array_values((array)$record);
+                ->get();
+
+            if ($records->isNotEmpty()) {
+                foreach ($records as $record) {
+                    $outputRow = array_values((array)$record);
+                    $outputCsvData[] = $outputRow;
+                }
             } else {
                 $outputRow = array_merge($outputRow, array_fill(0, count($dbFields) - 1, ''));
+                $outputCsvData[] = $outputRow;
             }
-    
-            $outputCsvData[] = $outputRow;
         }
-    
+
         // Add the database fields as the first row in the output CSV
         array_unshift($outputCsvData, $dbFields);
-    
+
         $outputCsvFile = fopen($outputCsvFilePath, 'w');
         foreach ($outputCsvData as $row) {
             fputcsv($outputCsvFile, $row);
         }
         fclose($outputCsvFile);
-    
+
         ModelsFile::create([
             'input_file' => $inputFile,
             'output_file' => 'files/output/' . $outputFileName,
@@ -77,7 +81,7 @@ class MatchController extends Controller
         session()->flash('success', 'CSV matching job is complete. You can download the result.');
         return redirect()->route('index');
     }
-    
+
 
 
     public function upload(Request $request)
