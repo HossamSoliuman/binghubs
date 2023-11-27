@@ -24,15 +24,15 @@ use Symfony\Component\Finder\Iterator\FilecontentFilterIterator;
 Auth::routes([
     'register' => false
 ]);
-Route::get('t', function () {
-    User::create([
-        'name' => 'Admin',
-        'email' => 'admin@edifyseven.com',
-        'email_verified_at' => now(),
-        'password' => Hash::make('Ye4oKoEa3Ro9llC'),
-        'remember_token' => 'jklj;joijklnkn',
-    ]);
-});
+// Route::get('t', function () {
+//     User::create([
+//         'name' => 'Admin',
+//         'email' => 'admin@edifyseven.com',
+//         'email_verified_at' => now(),
+//         'password' => Hash::make('Ye4oKoEa3Ro9llC'),
+//         'remember_token' => 'jklj;joijklnkn',
+//     ]);
+// });
 Route::middleware('auth')->group(function () {
 
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
