@@ -49,7 +49,7 @@
                             <input name="file" type="file" class="dropzone" id="file" required>
                         </div>
                     </div>
-
+<br>
                     <h3>Filters</h3>
                     <div class="form-group">
                         <label for="states">States (comma-separated):</label>
@@ -66,12 +66,71 @@
                     </div>
                     <div class="form-group">
                         <label for="filter[min_age]">Minimum Age:</label>
-                        <input type="number" name="filter[min_age]" class="form-control" id="min_age" placeholder="e.g., 18">
+                        <input type="number" name="filter[min_age]" class="form-control" id="min_age"
+                            placeholder="e.g., 18">
                     </div>
                     <div class="form-group">
                         <label for="filter[max_age]">Maximum Age:</label>
-                        <input type="number" name="filter[max_age]" class="form-control" id="max_age" placeholder="e.g., 65">
+                        <input type="number" name="filter[max_age]" class="form-control" id="max_age"
+                            placeholder="e.g., 65">
                     </div>
+
+                    <!-- New filters for credit score, income_range, and gender -->
+                    <div class="form-group">
+                        <label>Credit:</label>
+                        <div>
+                            <label><input type="checkbox" name="filter[credit][]" value="under_499"> Under
+                                499</label>
+                            <label><input type="checkbox" name="filter[credit][]" value="500-549"> 500-549</label>
+                            <label><input type="checkbox" name="filter[credit][]" value="550-599"> 550-599</label>
+                            <label><input type="checkbox" name="filter[credit][]" value="600-649"> 600-649</label>
+                            <label><input type="checkbox" name="filter[credit][]" value="650-699"> 650-699</label>
+                            <label><input type="checkbox" name="filter[credit][]" value="700-749">
+                                700-749</label>
+                            <label><input type="checkbox" name="filter[credit][]" value="750-799">
+                                750-799</label>
+                            <label><input type="checkbox" name="filter[credit][]" value="800+"> 800+</label>
+                            <label><input type="checkbox" name="filter[credit][]" value="Unknown">
+                                Unknown</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Income:</label>
+                        <div>
+                            <label><input type="checkbox" name="filter[income_range][]" value="Under $10000"> Under $10000</label>
+                            <label><input type="checkbox" name="filter[income_range][]" value="$10000 - $14999"> $10000 - $14999</label>
+                            <label><input type="checkbox" name="filter[income_range][]" value="$15000 - $19999"> $15000 - $19999</label>
+                            <label><input type="checkbox" name="filter[income_range][]" value="$20000 - $24999"> $20000 - $24999</label>
+                            <label><input type="checkbox" name="filter[income_range][]" value="$25000 - $29999"> $25000 - $29999</label>
+                            <label><input type="checkbox" name="filter[income_range][]" value="$30000 - $34999"> $30000 - $34999</label>
+                            <label><input type="checkbox" name="filter[income_range][]" value="$35000 - $39999"> $35000 - $39999</label>
+                            <label><input type="checkbox" name="filter[income_range][]" value="$40000 - $44999"> $40000 - $44999</label>
+                            <label><input type="checkbox" name="filter[income_range][]" value="$45000 - $49999"> $45000 - $49999</label>
+                            <label><input type="checkbox" name="filter[income_range][]" value="$50000 - $54999"> $50000 - $54999</label>
+                            <label><input type="checkbox" name="filter[income_range][]" value="$55000 - $59999"> $55000 - $59999</label>
+                            <label><input type="checkbox" name="filter[income_range][]" value="$60000 - $64999"> $60000 - $64999</label>
+                            <label><input type="checkbox" name="filter[income_range][]" value="$65000 - $74999"> $65000 - $74999</label>
+                            <label><input type="checkbox" name="filter[income_range][]" value="$75000 - $99999"> $75000 - $99999</label>
+                            <label><input type="checkbox" name="filter[income_range][]" value="$100000 - $149999"> $100000 - $149999</label>
+                            <label><input type="checkbox" name="filter[income_range][]" value="$150000 - $174999"> $150000 - $174999</label>
+                            <label><input type="checkbox" name="filter[income_range][]" value="$175000 - $199999"> $175000 - $199999</label>
+                            <label><input type="checkbox" name="filter[income_range][]" value="$200000 - $249999"> $200000 - $249999</label>
+                            <label><input type="checkbox" name="filter[income_range][]" value="$250000 +"> $250000 +</label>
+                            <label><input type="checkbox" name="filter[income_range][]" value="Unknown"> Unknown</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Gender:</label>
+                        <div>
+                            <label><input type="checkbox" name="filter[gender][]" value="M"> M</label>
+                            <label><input type="checkbox" name="filter[gender][]" value="F"> F</label>
+                            <label><input type="checkbox" name="filter[gender][]" value="U"> U</label>
+                        </div>
+                    </div>
+
+                    <!-- ... (remaining HTML code) ... -->
+
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                         <button type="button" class="btn btn-primary" id="applyFiltersBtn">Apply Filters</button>

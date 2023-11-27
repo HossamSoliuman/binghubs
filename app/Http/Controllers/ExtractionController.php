@@ -73,11 +73,19 @@ class ExtractionController extends LichtBaseController
         $dncIndex = array_search('dnc', $headerRow);
         $ageIndex = array_search('age', $headerRow);
 
+        $creditScoreIndex = array_search('creditscore', $headerRow);
+        $incomeIndex = array_search('income_range', $headerRow);
+        $genderIndex = array_search('gender', $headerRow);
+
         // Define your filter variables
         $stateFilter = isset($filter['states']) ? $filter['states'] : null;
         $dncFilter = isset($filter['dnc']) ? $filter['dnc'] : 'All';
         $minAgeFilter = isset($filter['min_age']) ? $filter['min_age'] : null;
         $maxAgeFilter = isset($filter['max_age']) ? $filter['max_age'] : null;
+
+        $creditScoreFilter = isset($filter['credit']) ? $filter['credit'] : null;
+        $incomeFilter = isset($filter['income_range']) ? $filter['income_range'] : null;
+        $genderFilter = isset($filter['gender']) ? $filter['gender'] : null;
 
         // Initialize a flag to write the header row
         $writeHeader = true;
@@ -95,15 +103,24 @@ class ExtractionController extends LichtBaseController
             $state = $stateIndex !== false ? $rowData[$stateIndex] : null;
             $dncValue = $dncIndex !== false ? $rowData[$dncIndex] : null;
             $age = $ageIndex !== false ? $rowData[$ageIndex] : null;
+            //
+            $creditScore = $creditScoreIndex !== false ? $rowData[$creditScoreIndex] : null;
+            $income = $incomeIndex !== false ? $rowData[$incomeIndex] : null;
+            $gender = $genderIndex !== false ? $rowData[$genderIndex] : null;
 
             // Apply your filter conditions here
             $statePass = !$stateFilter || in_array($state, explode(',', $stateFilter));
             $dncPass = is_null($dncFilter) || $dncFilter === 'All' || $dncValue === $dncFilter;
             $minAgePass = is_null($minAgeFilter) || $age >= $minAgeFilter;
             $maxAgePass = is_null($maxAgeFilter) || $age <= $maxAgeFilter;
+            //
+            $creditScorePass = !$creditScoreFilter || in_array($creditScore, $creditScoreFilter);
+            $incomePass = !$incomeFilter || in_array($income, $incomeFilter);
+            $genderPass = !$genderFilter || in_array($gender, $genderFilter);
+
 
             // If all filter conditions pass, write the row to the output file
-            if ($statePass && $dncPass && $minAgePass && $maxAgePass) {
+            if ($statePass && $dncPass && $minAgePass && $maxAgePass && $creditScorePass && $incomePass && $genderPass) {
                 fputcsv($outputCsvFile, $rowData);
             }
         }
@@ -127,7 +144,6 @@ class ExtractionController extends LichtBaseController
 
     public function filterTable($table, $filter)
     {
-        // Get the column names of the specified database table
         $tableColumns = DB::getSchemaBuilder()->getColumnListing($table);
         $tableColumns = array_filter($tableColumns, function ($field) {
             return $field !== 'id';
@@ -139,8 +155,29 @@ class ExtractionController extends LichtBaseController
         // Write the header row to the CSV file
         fputcsv($tempCsvFile, $tableColumns);
 
+        $creditScoreFilter = isset($filter['credit']) ? $filter['credit'] : null;
+        $incomeFilter = isset($filter['income_range']) ? $filter['income_range'] : null;
+        $genderFilter = isset($filter['gender']) ? $filter['gender'] : null;
         // Build the query dynamically based on the filter criteria
         $query = DB::table($table); // Use the specified table name
+
+        if (in_array('credit', $tableColumns)) {
+            if (isset($filter['credit'])) {
+                $query->whereIn('credit', $creditScoreFilter);
+            }
+        }
+
+        if (in_array('income_range', $tableColumns)) {
+            if (isset($filter['income_range'])) {
+                $query->whereIn('income_range', $incomeFilter);
+            }
+        }
+
+        if (in_array('gender', $tableColumns)) {
+            if (isset($filter['gender'])) {
+                $query->whereIn('gender', $genderFilter);
+            }
+        }
 
         if (in_array('state', $tableColumns)) {
             if (isset($filter['states'])) {
