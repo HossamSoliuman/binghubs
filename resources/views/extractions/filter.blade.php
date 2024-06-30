@@ -49,7 +49,7 @@
                             <input name="file" type="file" class="dropzone" id="file" required>
                         </div>
                     </div>
-<br>
+                    <br>
                     <h3>Filters</h3>
                     <div class="form-group">
                         <label for="states">States (comma-separated):</label>
@@ -97,29 +97,49 @@
                     <div class="form-group">
                         <label>Income:</label>
                         <div>
-                            <label><input type="checkbox" name="filter[income_range][]" value="Under $10000"> Under $10000</label>
-                            <label><input type="checkbox" name="filter[income_range][]" value="$10000 - $14999"> $10000 - $14999</label>
-                            <label><input type="checkbox" name="filter[income_range][]" value="$15000 - $19999"> $15000 - $19999</label>
-                            <label><input type="checkbox" name="filter[income_range][]" value="$20000 - $24999"> $20000 - $24999</label>
-                            <label><input type="checkbox" name="filter[income_range][]" value="$25000 - $29999"> $25000 - $29999</label>
-                            <label><input type="checkbox" name="filter[income_range][]" value="$30000 - $34999"> $30000 - $34999</label>
-                            <label><input type="checkbox" name="filter[income_range][]" value="$35000 - $39999"> $35000 - $39999</label>
-                            <label><input type="checkbox" name="filter[income_range][]" value="$40000 - $44999"> $40000 - $44999</label>
-                            <label><input type="checkbox" name="filter[income_range][]" value="$45000 - $49999"> $45000 - $49999</label>
-                            <label><input type="checkbox" name="filter[income_range][]" value="$50000 - $54999"> $50000 - $54999</label>
-                            <label><input type="checkbox" name="filter[income_range][]" value="$55000 - $59999"> $55000 - $59999</label>
-                            <label><input type="checkbox" name="filter[income_range][]" value="$60000 - $64999"> $60000 - $64999</label>
-                            <label><input type="checkbox" name="filter[income_range][]" value="$65000 - $74999"> $65000 - $74999</label>
-                            <label><input type="checkbox" name="filter[income_range][]" value="$75000 - $99999"> $75000 - $99999</label>
-                            <label><input type="checkbox" name="filter[income_range][]" value="$100000 - $149999"> $100000 - $149999</label>
-                            <label><input type="checkbox" name="filter[income_range][]" value="$150000 - $174999"> $150000 - $174999</label>
-                            <label><input type="checkbox" name="filter[income_range][]" value="$175000 - $199999"> $175000 - $199999</label>
-                            <label><input type="checkbox" name="filter[income_range][]" value="$200000 - $249999"> $200000 - $249999</label>
-                            <label><input type="checkbox" name="filter[income_range][]" value="$250000 +"> $250000 +</label>
-                            <label><input type="checkbox" name="filter[income_range][]" value="Unknown"> Unknown</label>
+                            <label><input type="checkbox" name="filter[income_range][]" value="Under $10000"> Under
+                                $10000</label>
+                            <label><input type="checkbox" name="filter[income_range][]" value="$10000 - $14999">
+                                $10000 - $14999</label>
+                            <label><input type="checkbox" name="filter[income_range][]" value="$15000 - $19999">
+                                $15000 - $19999</label>
+                            <label><input type="checkbox" name="filter[income_range][]" value="$20000 - $24999">
+                                $20000 - $24999</label>
+                            <label><input type="checkbox" name="filter[income_range][]" value="$25000 - $29999">
+                                $25000 - $29999</label>
+                            <label><input type="checkbox" name="filter[income_range][]" value="$30000 - $34999">
+                                $30000 - $34999</label>
+                            <label><input type="checkbox" name="filter[income_range][]" value="$35000 - $39999">
+                                $35000 - $39999</label>
+                            <label><input type="checkbox" name="filter[income_range][]" value="$40000 - $44999">
+                                $40000 - $44999</label>
+                            <label><input type="checkbox" name="filter[income_range][]" value="$45000 - $49999">
+                                $45000 - $49999</label>
+                            <label><input type="checkbox" name="filter[income_range][]" value="$50000 - $54999">
+                                $50000 - $54999</label>
+                            <label><input type="checkbox" name="filter[income_range][]" value="$55000 - $59999">
+                                $55000 - $59999</label>
+                            <label><input type="checkbox" name="filter[income_range][]" value="$60000 - $64999">
+                                $60000 - $64999</label>
+                            <label><input type="checkbox" name="filter[income_range][]" value="$65000 - $74999">
+                                $65000 - $74999</label>
+                            <label><input type="checkbox" name="filter[income_range][]" value="$75000 - $99999">
+                                $75000 - $99999</label>
+                            <label><input type="checkbox" name="filter[income_range][]" value="$100000 - $149999">
+                                $100000 - $149999</label>
+                            <label><input type="checkbox" name="filter[income_range][]" value="$150000 - $174999">
+                                $150000 - $174999</label>
+                            <label><input type="checkbox" name="filter[income_range][]" value="$175000 - $199999">
+                                $175000 - $199999</label>
+                            <label><input type="checkbox" name="filter[income_range][]" value="$200000 - $249999">
+                                $200000 - $249999</label>
+                            <label><input type="checkbox" name="filter[income_range][]" value="$250000 +"> $250000
+                                +</label>
+                            <label><input type="checkbox" name="filter[income_range][]" value="Unknown">
+                                Unknown</label>
                         </div>
                     </div>
-                    
+
                     <div class="form-group">
                         <label>Gender:</label>
                         <div>
@@ -131,9 +151,8 @@
 
                     <!-- ... (remaining HTML code) ... -->
 
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" id="applyFiltersBtn">Apply Filters</button>
+                    <div class="modal-footer"> <button type="button" class="btn btn-sm btn-dark"
+                            id="applyFiltersBtn">Apply Filters</button>
                     </div>
                 </form>
             </div>

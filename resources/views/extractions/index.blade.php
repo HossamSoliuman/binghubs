@@ -1,14 +1,11 @@
 @extends('layouts.admin')
 @section('content')
-    <div class="row justify-content-center mt-4">
+    <div class="row justify-content-center mt-3">
         <div class="col-md-11">
-            <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#exampleModal">
+            <h1>Extractions</h1>
+            <button type="button" class="btn btn-sm btn-dark mb-2" data-toggle="modal" data-target="#exampleModal">
                 New Extract
             </button>
-            {{-- <form action="{{ route('extractions.store') }}" method="post" enctype="multipart/form-data">
-                @csrf
-                <input type="submit" value="submit">
-            </form> --}}
             @include('extractions.filter')
             <table class="table">
                 <thead>
@@ -29,7 +26,8 @@
                             <td class="d-flex">
                                 <a href="{{ url($extraction->extraction_result) }}" download
                                     class="btn btn-info mr-1">Download</a>
-                                <form action="{{ route('extractions.destroy', ['extraction' => $extraction->id]) }}" method="post">
+                                <form action="{{ route('extractions.destroy', ['extraction' => $extraction->id]) }}"
+                                    method="post">
                                     @method('DELETE')
                                     @csrf
                                     <button type="submit" class="btn btn-danger ml-2">Delete</button>
@@ -41,6 +39,7 @@
             </table>
         </div>
     </div>
+
 
     <script>
         // JavaScript to show/hide the appropriate dropdown or file upload input
