@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>ACMS</title>
+    <title>Binghubs</title>
     <link rel="icon" href="logo-white-trans.png">
 
 
