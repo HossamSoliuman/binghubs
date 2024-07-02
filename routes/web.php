@@ -4,6 +4,7 @@ use App\Http\Controllers\ExtractionController;
 use App\Http\Controllers\FileController;
 use App\Http\Controllers\MatchController;
 use App\Http\Controllers\TableController;
+use App\Http\Controllers\UserController;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -33,6 +34,7 @@ Auth::routes([
 //         // 'password' => Hash::make('Ye4oKoEa3Ro9llC'),
 //         'password' => Hash::make('password'),
 //         'remember_token' => 'jklj;joijklnkn',
+//         'role' => 'admin'
 //     ]);
 // });
 Route::middleware('auth')->group(function () {
@@ -49,4 +51,8 @@ Route::middleware('auth')->group(function () {
     Route::post('upload', [MatchController::class, 'upload']);
     Route::resource('tables', TableController::class);
     Route::resource('extractions', ExtractionController::class);
+});
+
+Route::middleware(['auth', 'admin'])->group(function () {
+    Route::resource('users', UserController::class);
 });

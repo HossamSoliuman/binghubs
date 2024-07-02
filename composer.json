@@ -8,7 +8,7 @@
         "php": "^8.0.2",
         "doctrine/dbal": "^3.7",
         "guzzlehttp/guzzle": "^7.2",
-        "hossamsoliuman/licht": "^1.11",
+        "hossamsoliuman/licht": "^1.14",
         "laravel/framework": "^9.19",
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",

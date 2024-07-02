@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0d80df50cdf1f0804b47f259bbab1679",
+    "content-hash": "7455795dcad9b1c3cb3ace4fe9380565",
     "packages": [
         {
             "name": "brick/math",
@@ -1243,20 +1243,20 @@
         },
         {
             "name": "hossamsoliuman/licht",
-            "version": "1.11.0",
+            "version": "1.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/HossamSoliuman/licht.git",
-                "reference": "489db2ce75fabe1f4937e0b213dcb7bafd4116ef"
+                "reference": "802437c28b82570bfca6359fde6fdc7410e223f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/HossamSoliuman/licht/zipball/489db2ce75fabe1f4937e0b213dcb7bafd4116ef",
-                "reference": "489db2ce75fabe1f4937e0b213dcb7bafd4116ef",
+                "url": "https://api.github.com/repos/HossamSoliuman/licht/zipball/802437c28b82570bfca6359fde6fdc7410e223f4",
+                "reference": "802437c28b82570bfca6359fde6fdc7410e223f4",
                 "shasum": ""
             },
             "require": {
-                "laravel/framework": "^9.0",
+                "laravel/framework": "^9.0 || ^10.0",
                 "php": "^8.0"
             },
             "type": "library",
@@ -1285,9 +1285,9 @@
             "description": "CRUDs generator",
             "support": {
                 "issues": "https://github.com/HossamSoliuman/licht/issues",
-                "source": "https://github.com/HossamSoliuman/licht/tree/V1.11.0"
+                "source": "https://github.com/HossamSoliuman/licht/tree/v1.14.0"
             },
-            "time": "2023-09-28T17:26:03+00:00"
+            "time": "2024-04-27T16:52:26+00:00"
         },
         {
             "name": "laravel/framework",
@@ -8576,5 +8576,5 @@
         "php": "^8.0.2"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }
