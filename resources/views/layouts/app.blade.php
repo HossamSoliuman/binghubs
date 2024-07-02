@@ -10,10 +10,10 @@
     <link rel="icon" href="logo-white.png">
 
     <title>Binghubs</title>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css">
 
+    <link rel="stylesheet" href="{{ asset('custom/style.css') }}">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
@@ -26,7 +26,7 @@
 
 <body>
 
-    @yield('content')
+    @yield('app-content')
 
     @yield('scripts')
 </body>
