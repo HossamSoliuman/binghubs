@@ -25,14 +25,19 @@
                             id="upload-form">
                             @csrf
 
-                            <div class="mb-3">
-                                <label for="table" class="form-label">Select Database Table</label>
-                                <select name="table" class="form-select" id="table" required>
-                                    @foreach ($tables as $table)
-                                        <option value="{{ $table->name }}">{{ $table->name }}</option>
-                                    @endforeach
-                                </select>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="table" class="form-label">Select Database Table</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <select name="table" class="form-control" id="table" required>
+                                        @foreach ($tables as $table)
+                                            <option value="{{ $table->name }}">{{ $table->name }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
                             </div>
+
 
                             <div class="mb-4">
                                 <p class="dropzone-text">Drag & drop your CSV file here or click to browse</p>
@@ -52,14 +57,20 @@
                         <form action="{{ url('/upload') }}" method="POST" enctype="multipart/form-data" id="upload-form">
                             @csrf
 
-                            <div class="mb-3">
-                                <label for="table" class="form-label">Select Database Table</label>
-                                <select name="table" class="form-select" id="table" required>
-                                    @foreach ($tables as $table)
-                                        <option value="{{ $table->name }}">{{ $table->name }}</option>
-                                    @endforeach
-                                </select>
+
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="table" class="form-label">Select Database Table</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <select name="table" class="form-control" id="table" required>
+                                        @foreach ($tables as $table)
+                                            <option value="{{ $table->name }}">{{ $table->name }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
                             </div>
+
 
                             <div class="mb-4">
                                 <p class="dropzone-text">Drag & drop your CSV file here or click to browse</p>
@@ -95,14 +106,14 @@
                                     {{-- <button type="button" class="btn btn-primary" data-toggle="modal"
                                     data-target="#exampleModal">
                                     Extract --}}
-                                </button>
+                                    </button>
                                     <form action="{{ route('files.destroy', ['file' => $file->id]) }}" method="post">
                                         @method('DELETE')
                                         @csrf
                                         <button type="submit" class="btn btn-danger ml-2">Delete</button>
                                     </form>
 
-                                 
+
                                 </td>
                             </tr>
                             {{-- @include('files.filter') --}}

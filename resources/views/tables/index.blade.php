@@ -55,7 +55,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button type="button" class="btn btn-sm btn-dark" id="add-field"><i class="bi bi-plus-square"></i>  Add Field</button>
+                                <button type="button" class="btn btn-sm btn-dark" id="add-field"><i
+                                        class="bi bi-plus-square"></i> Add Field</button>
                         </div>
                         <div class="modal-footer">
                             <button type="submit" class="btn btn-sm btn-dark">Submit</button>
@@ -87,12 +88,12 @@
                             <td class="d-flex">
                                 <form action="{{ route('tables.duplicates', ['table' => $table->id]) }}" method="get"
                                     class="mr3">
-                                    <input class="btn btn-primary mr-2" type="submit" value="Remove Duplicates">
+                                    <input class="btn btn-sm btn-white mr-2" type="submit" value="Remove Duplicates">
                                 </form>
                                 <form action="{{ route('tables.destroy', ['table' => $table->id]) }}" method="post">
                                     @csrf
                                     @method('DELETE')
-                                    <button type="submit" class="btn btn-danger">Delete</button>
+                                    <button type="submit" class="btn btn-sm btn-dark">Delete</button>
                                 </form>
                             </td>
                         </tr>
