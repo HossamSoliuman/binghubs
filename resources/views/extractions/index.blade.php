@@ -24,14 +24,18 @@
                             <td>{{ basename($extraction->extraction_result) }}</td>
 
                             <td class="d-flex">
-                                <a href="{{ url($extraction->extraction_result) }}" download
-                                    class="btn btn-info mr-1">Download</a>
-                                <form action="{{ route('extractions.destroy', ['extraction' => $extraction->id]) }}"
-                                    method="post">
-                                    @method('DELETE')
-                                    @csrf
-                                    <button type="submit" class="btn btn-danger ml-2">Delete</button>
-                                </form>
+                                <div class="">
+                                    <a href="{{ url($extraction->extraction_result) }}" download
+                                        class="btn btn-sm btn-white mr-2">Download</a>
+                                </div>
+                                <div class="">
+                                    <form action="{{ route('extractions.destroy', ['extraction' => $extraction->id]) }}"
+                                        method="post">
+                                        @method('DELETE')
+                                        @csrf
+                                        <button type="submit" class="btn btn-sm btn-dark ml-2">Delete</button>
+                                    </form>
+                                </div>
                             </td>
                         </tr>
                     @endforeach

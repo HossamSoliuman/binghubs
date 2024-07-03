@@ -6,15 +6,16 @@ use App\Models\Extraction;
 use App\Http\Requests\StoreExtractionRequest;
 use App\Http\Requests\UpdateExtractionRequest;
 use App\Http\Resources\ExtractionResource;
+use App\Http\Traits\ManagesFiles;
 use App\Models\File;
 use App\Models\Table;
 use Hossam\Licht\Controllers\LichtBaseController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
-
-class ExtractionController extends LichtBaseController
+class ExtractionController extends Controller
 {
+    use ManagesFiles;
     public function index()
     {
         $tables = Table::all();
@@ -49,94 +50,95 @@ class ExtractionController extends LichtBaseController
     }
     public function filterFile($file, $filter)
     {
-        // Define the output file path
-        $outputFileName = 'extracted_file_' . time() . '_.csv';
-        $outputCsvFilePath = public_path('extracted_files/' . $outputFileName);
+        $inputFilePath = public_path($file);
+        $inputFileName = pathinfo($inputFilePath, PATHINFO_FILENAME);
+        $inputFileExt = pathinfo($inputFilePath, PATHINFO_EXTENSION);
 
-        // Open the input file as a read-only stream
-        $inputFileHandle = fopen(public_path($file), 'r');
+        $counter = 1;
+        $uniqueInputFilePath = $inputFilePath;
+
+        while (file_exists($uniqueInputFilePath)) {
+            $uniqueInputFilePath = public_path($inputFileName . '(' . $counter . ').' . $inputFileExt);
+            $counter++;
+        }
+
+        rename($inputFilePath, $uniqueInputFilePath);
+
+        $outputFileName = $inputFileName . '.csv';
+        $outputFilePath = public_path('extracted_files/' . $outputFileName);
+        $counter = 1;
+
+        while (file_exists($outputFilePath)) {
+            $outputFileName = $inputFileName . '(' . $counter . ').csv';
+            $outputFilePath = public_path('extracted_files/' . $outputFileName);
+            $counter++;
+        }
+
+        $inputFileHandle = fopen($uniqueInputFilePath, 'r');
         if ($inputFileHandle === false) {
             return "Error opening the input file.";
         }
 
-        // Open the output file as a write-only stream
-        $outputCsvFile = fopen($outputCsvFilePath, 'w');
+        $outputCsvFile = fopen($outputFilePath, 'w');
         if ($outputCsvFile === false) {
             return "Error creating the output file.";
         }
 
-        // Get the CSV header row to determine dynamic column positions
         $headerRow = fgetcsv($inputFileHandle);
 
-        // Determine the column positions dynamically
         $stateIndex = array_search('state', $headerRow);
         $dncIndex = array_search('dnc', $headerRow);
         $ageIndex = array_search('age', $headerRow);
-
         $creditScoreIndex = array_search('creditscore', $headerRow);
         $incomeIndex = array_search('income_range', $headerRow);
         $genderIndex = array_search('gender', $headerRow);
 
-        // Define your filter variables
         $stateFilter = isset($filter['states']) ? $filter['states'] : null;
         $dncFilter = isset($filter['dnc']) ? $filter['dnc'] : 'All';
         $minAgeFilter = isset($filter['min_age']) ? $filter['min_age'] : null;
         $maxAgeFilter = isset($filter['max_age']) ? $filter['max_age'] : null;
-
         $creditScoreFilter = isset($filter['credit']) ? $filter['credit'] : null;
         $incomeFilter = isset($filter['income_range']) ? $filter['income_range'] : null;
         $genderFilter = isset($filter['gender']) ? $filter['gender'] : null;
 
-        // Initialize a flag to write the header row
         $writeHeader = true;
 
-        // Process each line in the input file
         while (($rowData = fgetcsv($inputFileHandle)) !== false) {
-            // Check if it's the header row
             if ($writeHeader) {
-                fputcsv($outputCsvFile, $headerRow); // Write the header
+                fputcsv($outputCsvFile, $headerRow);
                 $writeHeader = false;
                 continue;
             }
 
-            // Extract values based on dynamic column positions
             $state = $stateIndex !== false ? $rowData[$stateIndex] : null;
             $dncValue = $dncIndex !== false ? $rowData[$dncIndex] : null;
             $age = $ageIndex !== false ? $rowData[$ageIndex] : null;
-            //
             $creditScore = $creditScoreIndex !== false ? $rowData[$creditScoreIndex] : null;
             $income = $incomeIndex !== false ? $rowData[$incomeIndex] : null;
             $gender = $genderIndex !== false ? $rowData[$genderIndex] : null;
 
-            // Apply your filter conditions here
             $statePass = !$stateFilter || in_array($state, explode(',', $stateFilter));
             $dncPass = is_null($dncFilter) || $dncFilter === 'All' || $dncValue === $dncFilter;
             $minAgePass = is_null($minAgeFilter) || $age >= $minAgeFilter;
             $maxAgePass = is_null($maxAgeFilter) || $age <= $maxAgeFilter;
-            //
             $creditScorePass = !$creditScoreFilter || in_array($creditScore, $creditScoreFilter);
             $incomePass = !$incomeFilter || in_array($income, $incomeFilter);
             $genderPass = !$genderFilter || in_array($gender, $genderFilter);
 
-
-            // If all filter conditions pass, write the row to the output file
             if ($statePass && $dncPass && $minAgePass && $maxAgePass && $creditScorePass && $incomePass && $genderPass) {
                 fputcsv($outputCsvFile, $rowData);
             }
         }
 
-        // Close the input and output files
         fclose($inputFileHandle);
         fclose($outputCsvFile);
 
-        // Create a record in the database (if needed)
         Extraction::create([
             'extracted_from_type' => 'file',
             'extracted_from' => $file,
             'extraction_result' => 'extracted_files/' . $outputFileName,
         ]);
 
-        // Provide a download link for the filtered CSV
         return $this->index();
     }
 
@@ -149,17 +151,14 @@ class ExtractionController extends LichtBaseController
             return $field !== 'id';
         });
 
-        // Create a temporary CSV file
         $tempCsvFile = tmpfile();
-
-        // Write the header row to the CSV file
         fputcsv($tempCsvFile, $tableColumns);
 
         $creditScoreFilter = isset($filter['credit']) ? $filter['credit'] : null;
         $incomeFilter = isset($filter['income_range']) ? $filter['income_range'] : null;
         $genderFilter = isset($filter['gender']) ? $filter['gender'] : null;
-        // Build the query dynamically based on the filter criteria
-        $query = DB::table($table); // Use the specified table name
+
+        $query = DB::table($table);
 
         if (in_array('credit', $tableColumns)) {
             if (isset($filter['credit'])) {
@@ -199,10 +198,8 @@ class ExtractionController extends LichtBaseController
             }
         }
 
-        // Fetch the filtered data
         $filteredData = $query->get();
 
-        // Write the filtered data to the CSV file
         foreach ($filteredData as $row) {
             $rowData = [];
             foreach ($tableColumns as $column) {
@@ -211,20 +208,21 @@ class ExtractionController extends LichtBaseController
             fputcsv($tempCsvFile, $rowData);
         }
 
-        // Reset the file pointer to the beginning
         rewind($tempCsvFile);
 
-        // Create a unique output CSV file name
-        $outputFileName = 'filtered_table_' . $table . '_' . time() . '.csv';
+        $outputFileName = $table . '.csv';
+        $outputFilePath = public_path('extracted_files/' . $outputFileName);
+        $counter = 1;
 
-        // Create the output CSV file in the public directory
-        $outputCsvFilePath = public_path('extracted_files/' . $outputFileName);
-        $outputCsvFile = fopen($outputCsvFilePath, 'w');
+        while (file_exists($outputFilePath)) {
+            $outputFileName = 'filtered_table_' . $table . '(' . $counter . ').csv';
+            $outputFilePath = public_path('extracted_files/' . $outputFileName);
+            $counter++;
+        }
 
-        // Copy the data from the temporary CSV file to the output CSV file
+        $outputCsvFile = fopen($outputFilePath, 'w');
         stream_copy_to_stream($tempCsvFile, $outputCsvFile);
 
-        // Close both files
         fclose($tempCsvFile);
         fclose($outputCsvFile);
 
@@ -234,7 +232,6 @@ class ExtractionController extends LichtBaseController
             'extraction_result' => 'extracted_files/' . $outputFileName,
         ]);
 
-        // Provide a download link for the filtered CSV
         return $this->index();
     }
 }

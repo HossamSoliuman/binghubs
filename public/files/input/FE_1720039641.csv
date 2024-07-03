@@ -1,0 +1,641 @@
+phone,firstname,lastname,gender,age,maritalstatus,street,apt,city,county,state,zip,living,housevalue,income,credit
+2012207794,Portia,Moldez,F,35,U,318 New Milford Ave,,Dumont,Bergen,NJ,7628,O,N,$75000 - $99999,650-699
+2025682333,Ida,Gross,F,38,S,11305 Maryvale Rd,,Upper Marlboro,Prince Georges,MD,20772,O,K,$50000 - $54999,550-599
+2026408833,Kevin,Spring,F,42,U,20549 Five Oaks Ct,,Sterling,Loudoun,VA,20165,O,Q,$100000 - $149999,700-749
+2028696424,Jade M,Manning,F,34,S,3101 Pennsylvania Ave Se,Apt 301,Washington,District Of Columbia,DC,20020,R,U,Under $10000,600-649
+2029056239,Starleana L,Stackhouse,F,31,S,3372 Brothers Pl Se,,Washington,District Of Columbia,DC,20032,R,U,$30000 - $34999,600-649
+2034941515,Mareril,Wheeler,M,47,S,3411 Wayne Ave,Apt 7A,Bronx,Bronx,NY,10467,U,U,$30000 - $34999,Unknown
+2035655403,Normand,Bard,M,66,S,18 Center St,,Wolcott,New Haven,CT,6716,R,U,$20000 - $24999,650-699
+2039001090,Catherine F,Brunetti,F,54,M,6 Stormy Circle Dr,,Greenwich,Fairfield,CT,6830,O,S,$250000 +,700-749
+2039001090,James A,Brunetti,M,56,M,6 Stormy Circle Dr,,Greenwich,Fairfield,CT,6830,O,S,$250000 +,700-749
+2053821550,Ashley M,Travis,F,32,S,5235 Shady Grove Rd,,Mount Olive,Jefferson,AL,35117,O,U,$65000 - $74999,750-799
+2053945149,Tim,Holifield,M,64,M,496 Morgan Rd,,Brent,Bibb,AL,35034,O,M,$75000 - $99999,700-749
+2059141845,Dawn V,Bowes,F,61,S,2730 Trafford County Line Rd,,Trafford,Jefferson,AL,35172,O,G,$25000 - $29999,750-799
+2073205620,Brandy,Richardson,F,45,S,30 Bridge St,Apt 2,Phillips,Franklin,ME,4966,R,U,$10000 - $14999,550-599
+2082218289,Marcia M,Thornock,F,75,S,736 El Rancho Blvd,,Pocatello,Bannock,ID,83201,O,I,$45000 - $49999,550-599
+2092710675,Rodney,Jones,M,55,S,1323 W Magnolia St,,Stockton,San Joaquin,CA,95203,O,N,$55000 - $59999,750-799
+2096311111,Arnold B,Tangaan,M,52,M,3237 Leaf Dr,,Merced,Merced,CA,95340,O,R,$200000 - $249999,750-799
+2096311111,August D,Tanagaan,M,23,U,3237 Leaf Dr,,Merced,Merced,CA,95340,O,R,$200000 - $249999,750-799
+2096311111,Marie D,Tangaan,F,51,M,3237 Leaf Dr,,Merced,Merced,CA,95340,O,R,$200000 - $249999,750-799
+2103340108,Fidel,Flores,U,64,S,5162 Village Grn,,San Antonio,Bexar,TX,78218,O,D,$35000 - $39999,650-699
+2103340108,Lydia,Flores,U,83,M,5162 Village Crst,,San Antonio,Bexar,TX,78218,U,U,$35000 - $39999,600-649
+2104103140,Steven,Duke,M,46,S,217 Rough Bark St,,Buda,Hays,TX,78610,U,U,Unknown,Unknown
+2104208671,Herbert,Smith,M,61,M,11585 Alamo Ranch Pkwy,Apt 7208,San Antonio,Bexar,TX,78253,U,U,$100000 - $149999,Unknown
+2107247880,Alejandro E,Lopez,M,65,M,330 County Road 3823,,San Antonio,Bexar,TX,78253,O,I,$75000 - $99999,600-649
+2107247880,Melanie P,Lopez,F,40,S,330 County Road 3823,,San Antonio,Bexar,TX,78253,O,I,$75000 - $99999,600-649
+2107247880,Olga Y,Lopez,F,61,M,330 County Road 3823,,San Antonio,Bexar,TX,78253,O,I,$75000 - $99999,600-649
+2107247880,Olga,Lopez,F,61,U,340 Savannah Rdg,,Von Ormy,Bexar,TX,78073,U,U,Under $10000,700-749
+2107349352,Cassandra,Limon,F,40,U,307 Whistling Duck,,San Antonio,Bexar,TX,78253,O,O,Unknown,Unknown
+2107349352,Gloria D,Garcia,F,76,S,1910 W Magnolia Ave,,San Antonio,Bexar,TX,78201,O,I,$60000 - $64999,650-699
+2132108567,Elsa,Huerta,U,66,S,11656 1/2 Coldbrook Ave,,Downey,Los Angeles,CA,90241,O,U,$10000 - $14999,600-649
+2133815233,Daniel,Yim,M,93,S,2451 W 7Th St,Apt 211,Los Angeles,Los Angeles,CA,90057,R,U,$10000 - $14999,500-549
+2144175590,Fredrick P,Martinez,M,57,M,Po Box 4091,,Bellevue,King,WA,98009,U,U,$250000 +,Unknown
+2144175590,Jake,Martinez,M,29,S,Po Box 4091,,Bellevue,King,WA,98009,U,U,$250000 +,Unknown
+2146356457,Romana A,Evans,F,53,M,103 Woodacre Cir,,Duncanville,Dallas,TX,75116,O,O,$100000 - $149999,700-749
+2149984846,Danise,Faulk,F,54,U,5920 E University Blvd,Apt 5111,Dallas,Dallas,TX,75206,U,U,Unknown,Unknown
+2162624522,Paul D,Tabler,M,74,M,687 Jefferson St,,Bedford,Cuyahoga,OH,44146,O,J,$75000 - $99999,750-799
+2163137283,Whitney,Wilcoxson,M,33,U,16009 Shirley Ave,,Maple Heights,Cuyahoga,OH,44137,O,E,Unknown,650-699
+2163745582,Clarise,Brown,F,34,S,10612 Wadsworth Ave,,Cleveland,Cuyahoga,OH,44125,O,D,$10000 - $14999,650-699
+2163750128,Lakeisha T,Madden,F,34,S,1764 Beaconwood Ave,,Cleveland,Cuyahoga,OH,44121,O,G,$60000 - $64999,650-699
+2164694771,Jacqueline,Knighton,F,1,U,3447 E 114Th St,,Cleveland,Cuyahoga,OH,44104,O,B,$10000 - $14999,500-549
+2164694771,Tanisha,Knightonbe,F,1,U,3447 E 114Th St,,Cleveland,Cuyahoga,OH,44104,O,B,$10000 - $14999,500-549
+2165343784,Tanya,Smith,F,52,S,15127 Montanus Dr,,Culpeper,Culpeper,VA,22701,O,P,$100000 - $149999,600-649
+2165343784,Theresa,Smith,F,75,S,15127 Montanus Dr,,Culpeper,Culpeper,VA,22701,O,P,$100000 - $149999,600-649
+2166302179,James R,Donhiser,M,27,U,8699 Dunsmore Rd,,Rapid City,Pennington,SD,57702,O,S,$250000 +,Unknown
+2166302179,Kathleen M,Donhiser,F,59,S,8699 Dunsmore Rd,,Rapid City,Pennington,SD,57702,O,S,$250000 +,750-799
+2178513483,Jessica L,Costello,F,34,U,3321 Glen Meadow Ct,,Tampa,Hillsborough,FL,33614,U,U,Unknown,Unknown
+2187663699,Christine J,Hinners,F,57,M,9527 Pond Rd N,,Bemidji,Beltrami,MN,56601,O,B,$100000 - $149999,600-649
+2187663699,Hailey,Hinners,F,28,S,9527 Pond Rd N,,Bemidji,Beltrami,MN,56601,O,B,$100000 - $149999,650-699
+2197180607,Kata,Strong,F,60,U,178 Charismatic Ln,,New Braunfels,Comal,TX,78130,O,F,$30000 - $34999,Unknown
+2197180607,Tabitha A,Strong,F,34,U,9140 Walnut Dr,,Munster,Lake,IN,46321,O,O,$100000 - $149999,750-799
+2252881090,Tarsha M,Claiborne,F,47,S,12338 Turnley Dr,,Baton Rouge,East Baton Rouge,LA,70807,O,E,$35000 - $39999,650-699
+2254564311,Rejohnia M,Harrell,F,40,S,17254 Deer Lake Ave,,Baton Rouge,East Baton Rouge,LA,70816,O,G,$100000 - $149999,700-749
+2294453256,Linda,Brown,F,66,S,1314 Newton Dr,,Tifton,Tift,GA,31794,U,U,$15000 - $19999,650-699
+2298546095,Ronak B,Patel,M,32,S,41 Pine Cone Rd,,Moultrie,Colquitt,GA,31768,O,L,$100000 - $149999,700-749
+2392334684,James,Gervais,M,42,S,8999 Nw 137Th Ave,,Morriston,Levy,FL,32668,U,U,$45000 - $49999,750-799
+2403554332,Oluwamayowa O,Ilori,U,28,M,7916 Canter Ct,,Severn,Anne Arundel,MD,21144,O,O,$100000 - $149999,Unknown
+2405074419,Tamar M,Gasko,F,29,S,5906 Rolston Rd,,Bethesda,Montgomery,MD,20817,O,Q,$75000 - $99999,750-799
+2408884915,Allison M,Judd,F,52,S,7665 Arbory Ct,Apt 235,Laurel,Prince Georges,MD,20707,O,K,$35000 - $39999,600-649
+2409382118,Oludotun,Oloyede,M,1,U,6903 Greenboro Ln,,Fort Washington,Prince Georges,MD,20744,O,M,$100000 - $149999,650-699
+2482129448,Alixandra,Highducheck,F,30,S,4875 New Cut Rd,,Inman,Spartanburg,SC,29349,O,H,$100000 - $149999,700-749
+2482129448,Christine L,Highducheck,F,53,M,4875 New Cut Rd,,Inman,Spartanburg,SC,29349,O,H,$100000 - $149999,750-799
+2482129448,Kathryn E,Highducheck,F,25,U,4875 New Cut Rd,,Inman,Spartanburg,SC,29349,O,H,$100000 - $149999,700-749
+2483992000,James,Perry,M,23,M,875 Westbrooke Dr,,South Lyon,Oakland,MI,48178,O,M,$175000 - $199999,750-799
+2485081865,Karthik S,Ramaseshan,M,31,S,32518 New York St,,Saint Clair Shores,Macomb,MI,48082,O,I,$250000 +,750-799
+2487017719,Adam R,Finlayson,M,48,M,19141 Gearhart Dr,,Macomb,Macomb,MI,48042,O,N,$100000 - $149999,650-699
+2488493015,Carly,Thureson,F,25,S,36 Perry St,,Unionville,Hartford,CT,6085,O,M,$175000 - $199999,Unknown
+2488493015,Matthew R,Thureson,M,23,M,36 Perry St,,Unionville,Hartford,CT,6085,O,M,$175000 - $199999,750-799
+2519783332,Phillip L,Hardy,M,37,M,27610 Koen Ln,,Loxley,Baldwin,AL,36551,O,U,$20000 - $24999,500-549
+2533631710,Faasala,Ale,U,56,M,3614 Quail Ridge Dr,,Harker Heights,Bell,TX,76548,U,U,$175000 - $199999,700-749
+2533770450,Brooke,Beverley,F,1,U,5280 S Tavistock Ave,,Meridian,Ada,ID,83642,O,Q,Unknown,Unknown
+2533770450,Bryan,Beverley,M,55,U,5280 S Tavistock Ave,,Meridian,Ada,ID,83642,O,Q,Unknown,Unknown
+2533770450,Janette,Beverley,F,46,U,5280 S Tavistock Ave,,Meridian,Ada,ID,83642,O,Q,Unknown,Unknown
+2533770450,Sabrina,Beverley,F,26,U,5280 S Tavistock Ave,,Meridian,Ada,ID,83642,U,U,Unknown,Unknown
+2546241679,Linda L,Richards,F,56,S,1318 Paseo Del Cobre,,Temple,Bell,TX,76502,O,F,$25000 - $29999,650-699
+2563434127,Anna E,Jackson,F,26,S,22 Dogwood St,,Santa Rosa Beach,Walton,FL,32459,O,S,$100000 - $149999,Unknown
+2564525396,Geoffrey S,Williams,M,58,M,48371 Al Highway 21,,Munford,Talladega,AL,36268,O,H,$100000 - $149999,700-749
+2565029582,Michael A,Camron,M,31,S,627 Herman Bailey Rd,,Somerville,Morgan,AL,35670,O,J,$65000 - $74999,750-799
+2565029582,Rodney M,Camron,M,80,M,627 Herman Bailey Rd,,Somerville,Morgan,AL,35670,O,J,$65000 - $74999,750-799
+2565297474,Hanna,Mamo,F,63,M,167 Singletree Dr,,Hazel Green,Madison,AL,35750,O,F,$60000 - $64999,650-699
+2624222476,Michelle,Naragon,F,25,U,W237N9427 Mount Vernon Dr,,Colgate,Washington,WI,53017,O,O,$200000 - $249999,Unknown
+2627199470,Casey,Ferguson,M,58,M,205 S Elmridge Ave,,Brookfield,Waukesha,WI,53005,O,N,$100000 - $149999,600-649
+2627199470,Jeff D,Ferguson,M,52,S,205 S Elmridge Ave,,Brookfield,Waukesha,WI,53005,O,N,$100000 - $149999,600-649
+2627644290,Carl T,Tawwater,M,51,S,3607 75Th St,,Kenosha,Kenosha,WI,53142,O,G,$10000 - $14999,650-699
+2672104265,Alexis,Pope,F,28,U,355 Wedgewood Dr,,Pottstown,Chester,PA,19465,O,O,$150000 - $174999,750-799
+2675827607,Sean,Rooney,M,37,S,425B Church Ln,,Lansdowne,Delaware,PA,19050,R,U,$50000 - $54999,600-649
+2704056826,Cody,Judd,M,31,S,810 Robert Landis Rd,,Greensburg,Green,KY,42743,R,U,$25000 - $29999,700-749
+2818251580,Tamekia,Milladge,F,44,M,5710 Kenilwood Dr,,Houston,Harris,TX,77033,O,I,$20000 - $24999,550-599
+2818882222,Jorge M,Puig,M,50,M,4925 Holt St,,Bellaire,Harris,TX,77401,O,S,$100000 - $149999,700-749
+3013574051,Charity N,Okafor,F,44,M,10102 Brightfield Ln,,Upper Marlboro,Prince Georges,MD,20772,O,Q,$175000 - $199999,650-699
+3014614303,Emily G,Wang,F,27,S,9811 Bald Cypress Dr,,Rockville,Montgomery,MD,20850,O,S,$250000 +,Unknown
+3017925104,Linda N,Ekwezia,F,40,S,2006 Robert Bowie Dr,,Upper Marlboro,Prince Georges,MD,20774,O,U,$55000 - $59999,600-649
+3019108756,Jennifer S,Weinstein,F,62,S,11609 Moorestown Pl,,Gaithersburg,Montgomery,MD,20878,O,R,$250000 +,750-799
+3037186482,Hunter R,Teets,M,43,S,1927 Oak Ave,,Boulder,Boulder,CO,80304,O,S,$175000 - $199999,750-799
+3038083489,Andrew,Pocock,M,44,M,419 N Knapman Ave,,Sequim,Clallam,WA,98382,O,U,$75000 - $99999,750-799
+3038756479,Adrian K,Panek,M,46,M,6838 Taft Ct,,Arvada,Jefferson,CO,80004,O,Q,$175000 - $199999,650-699
+3038756479,Neoldina,Panek,F,44,M,6838 Taft Ct,,Arvada,Jefferson,CO,80004,O,Q,$175000 - $199999,650-699
+3038801127,Allie,Miller,U,39,S,120 Ponderosa Dr,,Sterling,Logan,CO,80751,O,Q,$175000 - $199999,Unknown
+3038801127,Kathy L,Miller,F,70,M,120 Ponderosa Dr,,Sterling,Logan,CO,80751,O,Q,$175000 - $199999,Unknown
+3039955812,Richard M,Griffith,M,63,M,204 River Oaks Rd,,Comfort,Kendall,TX,78013,O,O,$150000 - $174999,800+
+3039955812,Rita L,Griffith,F,63,M,204 River Oaks Rd,,Comfort,Kendall,TX,78013,O,O,$150000 - $174999,800+
+3045310943,Brittany N,Casto,F,29,S,915 Race St,,Ravenswood,Jackson,WV,26164,O,E,$45000 - $49999,600-649
+3046381453,Ronald,Childers,M,84,S,103 Scioto Ave,,South Point,Lawrence,OH,45680,U,U,$50000 - $54999,600-649
+3046381453,Rupert A,Childers,M,60,M,103 Scioto Ave,,South Point,Lawrence,OH,45680,O,F,$50000 - $54999,500-549
+3053005564,Melissa J,Turner,F,49,S,3682 Grand Ave,Apt 4,Miami,Miami-Dade,FL,33133,R,U,$60000 - $64999,650-699
+3053933803,Ashley,Martin,F,39,U,320 Possum Trot Rd,,Ponte Vedra Beach,Saint Johns,FL,32082,O,S,$35000 - $39999,Unknown
+3053933803,Ashley,Schwartz,F,39,S,4659 Homestead Rd,,Jacksonville,Duval,FL,32210,U,U,$30000 - $34999,650-699
+3054397636,Daniel,Nieto,M,51,S,6011 W 24Th Ave,Apt 202,Hialeah,Miami-Dade,FL,33016,R,U,$35000 - $39999,550-599
+3055270582,Isis,Vazquez,F,55,S,821 W 67Th St,,Hialeah,Miami-Dade,FL,33012,O,H,$55000 - $59999,700-749
+3055467105,Sandro,Fleitas,U,52,S,720 Sw 60Th Ct,,Miami,Miami-Dade,FL,33144,O,U,$60000 - $64999,600-649
+3055527440,Frank,Martino,M,54,M,4581 Sw 164Th Ct,,Miami,Miami-Dade,FL,33185,O,Q,$200000 - $249999,550-599
+3056674349,Theresa,Dominguez,F,1,S,6411 Sw 64Th Ave,,Miami,Miami-Dade,FL,33143,O,U,$30000 - $34999,600-649
+3057478095,Patricia,Philippe,F,34,S,275 Nw 191St St,,Miami,Miami-Dade,FL,33169,O,O,$35000 - $39999,650-699
+3057641863,Chelsie,Byars,F,28,S,2490 Nw 82Nd St,,Miami,Miami-Dade,FL,33147,R,U,$15000 - $19999,600-649
+3057997561,Marizela,Cabrera,F,65,M,7465 Sw 19Th Ter,,Miami,Miami-Dade,FL,33155,O,N,$75000 - $99999,650-699
+3058032778,Aimee S,Carrillo,F,66,M,21408 Nw 13Th Pl,,Miami,Miami-Dade,FL,33169,U,U,$65000 - $74999,Unknown
+3058032778,Camila,Carrillo,F,34,S,21408 Nw 13Th Pl,,Miami,Miami-Dade,FL,33169,U,U,$65000 - $74999,Unknown
+3058032778,Jose,Carrillo,M,71,M,21408 Nw 13Th Pl,,Miami,Miami-Dade,FL,33169,U,U,$65000 - $74999,Unknown
+3058042669,Lazaro,Perez,M,58,S,3747 Ne 1St St,,Homestead,Miami-Dade,FL,33033,O,M,Unknown,Unknown
+3058795570,Karen S,Germain,F,48,S,292 Whirlaway Dr,,Davenport,Polk,FL,33837,O,P,$100000 - $149999,Unknown
+3058795570,Matthew S,Germain,M,22,M,4722 S Rio Grande Ave,Apt 42,Orlando,Orange,FL,32839,U,U,$100000 - $149999,Unknown
+3058795570,Miguel S,Germain,M,27,S,4722 S Rio Grande Ave,Apt 42,Orlando,Orange,FL,32839,U,U,$100000 - $149999,Unknown
+3058795570,Miguel,Germain,M,27,U,292 Whirlaway Dr,,Davenport,Polk,FL,33837,U,U,$100000 - $149999,Unknown
+3058795570,Yves V,Germain,M,58,M,292 Whirlaway Dr,,Davenport,Polk,FL,33837,O,P,$100000 - $149999,Unknown
+3059726677,William H,Labrie,M,69,S,451 Palmetto St,,Dunedin,Pinellas,FL,34698,O,O,$75000 - $99999,600-649
+3059864176,Gil J,Nehamkin,M,58,M,2638 Miller Ct,,Fort Lauderdale,Broward,FL,33332,O,U,$100000 - $149999,700-749
+3059864176,Sigal,Nehamkin,F,57,M,2638 Miller Ct,,Fort Lauderdale,Broward,FL,33332,O,O,$100000 - $149999,750-799
+3073714843,Floyd R,Gummersall,M,42,S,2720 N Montezuma Ave,,Tucson,Pima,AZ,85712,O,K,$55000 - $59999,650-699
+3097065603,Marlys M,Bennington,F,55,M,1709 Blue Spruce Ct,,Normal,Mclean,IL,61761,O,M,$100000 - $149999,700-749
+3106343067,Donny,Huynh,M,45,U,1943 W 162Nd St,,Gardena,Los Angeles,CA,90247,O,R,$50000 - $54999,700-749
+3107105430,Lodel,Caplan,U,50,S,1157 W 10Th St,,San Pedro,Los Angeles,CA,90731,O,S,$100000 - $149999,650-699
+3129140991,John,Bernadyn,M,1,S,1933 Main St,Apt 101,Oregon City,Clackamas,OR,97045,U,U,Unknown,Unknown
+3129140991,Jose,Bernadyn,M,36,U,1933 Main St,Apt 101,Oregon City,Clackamas,OR,97045,U,U,Unknown,Unknown
+3129268811,Gillian N,Smith,F,41,S,680 N Lake Shore Dr,Apt 307,Chicago,Cook,IL,60611,U,U,$75000 - $99999,750-799
+3132085501,Maurice L,Henderson,M,57,S,14588 Beaverland St,,Detroit,Wayne,MI,48223,O,C,$50000 - $54999,600-649
+3132124000,Lakenya T,Snipes,F,49,S,19178 Winthrop St,,Detroit,Wayne,MI,48235,O,C,$10000 - $14999,600-649
+3136598235,Jennifer A,Tolliver,F,31,S,17147 Gore,,Detroit,Wayne,MI,48219,U,U,$10000 - $14999,Unknown
+3136639515,Leila,Eter,F,28,S,27041 Simone St,,Dearborn Heights,Wayne,MI,48127,O,L,$100000 - $149999,700-749
+3137685446,Deborah M,Saunders,F,56,S,1367 Washington Ave,,Lincoln Park,Wayne,MI,48146,O,U,$20000 - $24999,600-649
+3142889161,Mark,Adderley,M,53,U,4770 Old School Trl,,Hillsboro,Jefferson,MO,63050,O,L,$75000 - $99999,700-749
+3152433260,Mark A,Ballway,M,70,M,81 Pilgrim Dr,,Palm Coast,Flagler,FL,32164,O,K,$75000 - $99999,600-649
+3155254457,Kathleen D,Spencer,F,59,S,216 Thieme Pl,Apt 2,Utica,Oneida,NY,13502,O,G,$75000 - $99999,700-749
+3157205135,Joshua R,Hunold,M,34,U,147 Chestnut Hill Rd,,Norwalk,Fairfield,CT,6851,U,U,$100000 - $149999,700-749
+3173982812,Melissa L,Banks,F,47,M,422 Camellia St,,Inverness,Citrus,FL,34452,O,H,$55000 - $59999,700-749
+3173982812,Morgan D,Banks,F,22,M,422 Camellia St,,Inverness,Citrus,FL,34452,O,H,$55000 - $59999,700-749
+3174910636,Rene,Rodriguez,U,1,U,1140 Medford Ave,,Indianapolis,Marion,IN,46222,O,E,$25000 - $29999,550-599
+3176159266,Afzoon,Hakeem,F,32,M,402 Zephyr Way,,Westfield,Hamilton,IN,46074,O,J,$75000 - $99999,600-649
+3176159266,Homa,Hakeem,U,66,S,402 Zephyr Way,,Westfield,Hamilton,IN,46074,O,I,$75000 - $99999,600-649
+3176159266,Zahra,Hakeem,F,1,S,402 Zephyr Way,,Westfield,Hamilton,IN,46074,O,J,$75000 - $99999,600-649
+3178092406,Brandon,Whittington,M,43,M,819 W Ellis St,,Milan,Ripley,IN,47031,O,H,$75000 - $99999,500-549
+3183447088,Angela,Nguyen,F,24,S,110 Tiffin Ct,,Shreveport,Caddo,LA,71115,O,I,$100000 - $149999,700-749
+3183447088,Louis T,Nguyen,M,56,M,110 Tiffin Ct,,Shreveport,Caddo,LA,71115,O,I,$100000 - $149999,750-799
+3183447088,Melissa B,Nguyen,F,52,M,110 Tiffin Ct,,Shreveport,Caddo,LA,71115,O,I,$100000 - $149999,700-749
+3186137860,Mathew F,Ellis,M,57,M,234 Mudge Rd,,Boyce,Rapides,LA,71409,O,G,$75000 - $99999,700-749
+3204934467,Heather M,Dahl,F,39,S,302 S 8Th St,,Olivia,Renville,MN,56277,U,U,$25000 - $29999,700-749
+3214373393,David P,Debow,M,42,S,1946 Sherbourne St,,Winter Garden,Orange,FL,34787,O,N,$200000 - $249999,550-599
+3214373393,Lindsey C,Debow,F,45,M,1946 Sherbourne St,,Winter Garden,Orange,FL,34787,O,N,$200000 - $249999,650-699
+3214373393,Lisa,Debow,F,46,M,1946 Sherbourne St,,Winter Garden,Orange,FL,34787,O,N,$200000 - $249999,550-599
+3236376865,Lisa S,Nicola,F,47,S,5608 Monte Vista St,,Los Angeles,Los Angeles,CA,90042,O,U,$175000 - $199999,650-699
+3252608059,Taylor K,Broderick,M,37,S,1810 Echo Ct,,Abilene,Taylor,TX,79602,O,M,$100000 - $149999,650-699
+3252608059,Treva L,Broderick,F,64,M,1810 Echo Ct,,Abilene,Taylor,TX,79602,O,M,$100000 - $149999,650-699
+3255133323,Adriene,Sims,F,61,S,310 Arnold Blvd,Trlr 38,Abilene,Taylor,TX,79605,R,U,$10000 - $14999,550-599
+3305023999,John D,Allen Jr,M,45,M,204 Edna St,,Youngstown,Mahoning,OH,44514,O,L,$200000 - $249999,700-749
+3305505176,Cory T,Basista,M,26,S,2278 Frostwood Dr,,Youngstown,Mahoning,OH,44515,O,G,$100000 - $149999,750-799
+3305505176,Sandra L,Basista,F,64,M,2278 Frostwood Dr,,Youngstown,Mahoning,OH,44515,O,G,$100000 - $149999,750-799
+3306922429,Seanna D,Ammon,F,40,S,12515 Steubenville Pike,,Lisbon,Columbiana,OH,44432,R,U,$10000 - $14999,600-649
+3307740577,Jodi,Sam,F,1,S,5412 Sirius Dr,Unit 103,Wilmington,New Hanover,NC,28405,U,U,$10000 - $14999,Unknown
+3309335735,Valerie K,Strasser,F,33,S,4519 Baker St Se,,East Canton,Stark,OH,44730,O,K,$75000 - $99999,750-799
+3343158612,Cortlyn M,Boyd,U,28,S,850 New Ebenezer Rd,,Lapine,Montgomery,AL,36046,O,I,$75000 - $99999,600-649
+3348683242,Randall C,Dunn,M,50,S,1322 N Dean Rd,Apt 105,Auburn,Lee,AL,36830,U,U,$45000 - $49999,650-699
+3368707951,Leigha J,Doxtad,F,39,S,18 Hydrangea Ct,,Greensboro,Guilford,NC,27455,O,F,$60000 - $64999,700-749
+3472456085,Claudia,Fraser,F,48,S,84 Jackson Ave,,Copiague,Suffolk,NY,11726,R,U,$55000 - $59999,600-649
+3472639046,Michelle M,Brady,F,52,S,462 Marcy Ave,Apt 5A,Brooklyn,Kings,NY,11206,R,U,$10000 - $14999,600-649
+3473315611,Jose Luis L,Santiago,M,45,S,635 Castle Hill Ave,Apt 18G,Bronx,Bronx,NY,10473,R,U,$10000 - $14999,650-699
+3474516864,Cameron M,Burke,M,60,M,19 Hudson Ct,,Jersey City,Hudson,NJ,7305,U,U,$100000 - $149999,700-749
+3474516864,Minta S,Royster,F,46,S,262 W 136Th St,Apt 3,New York,New York,NY,10030,R,U,$10000 - $14999,650-699
+3475867777,Dara,Shore,F,35,S,3281 Yost Blvd,,Oceanside,Nassau,NY,11572,O,Q,$175000 - $199999,750-799
+3477541419,Phoebe A,Robinson,F,30,S,526 Milford St,,Brooklyn,Kings,NY,11208,O,S,$35000 - $39999,600-649
+3479338459,Sergio R,Leon,M,49,M,102 Mountain Ave,,Caldwell,Essex,NJ,7006,O,Q,$200000 - $249999,700-749
+3479650373,Maria,Aponte,F,46,S,3405 12Th St,Apt 4B,Astoria,Queens,NY,11106,R,U,$10000 - $14999,600-649
+3522835864,Marla,Desrosiers,F,67,S,5680 Nw 3Rd Pl,,Ocala,Marion,FL,34482,O,C,$40000 - $44999,650-699
+3523457156,Steven W,Sweet,M,53,S,5413 Alicante Ln,,Louisville,Jefferson,KY,40272,U,U,$20000 - $24999,600-649
+3602708500,Alvern L,Price,M,82,S,958 8Th Ave,,Longview,Cowlitz,WA,98632,O,U,$10000 - $14999,600-649
+3602936649,Carla A,Smythe,F,63,M,3301 Field Ave,,Anacortes,Skagit,WA,98221,O,Q,$100000 - $149999,750-799
+3602936649,Douglas A,Smythe,M,62,M,3301 Field Ave,,Anacortes,Skagit,WA,98221,O,Q,$100000 - $149999,750-799
+3602936649,Hannah C,Smythe,F,31,S,3301 Field Ave,,Anacortes,Skagit,WA,98221,O,Q,$100000 - $149999,750-799
+3605376032,Richard,Kapatsos,M,57,M,2916 Cherry St,,Hoquiam,Grays Harbor,WA,98550,O,H,$50000 - $54999,750-799
+3614437538,Ronald S,Morgan,M,77,M,7646 Stony Brook Dr,,Corpus Christi,Nueces,TX,78413,O,L,$100000 - $149999,650-699
+3869653036,Shanie I,Dasrath,F,40,S,295 Nw Commons Loop,Ste 115,Lake City,Columbia,FL,32055,U,U,$15000 - $19999,650-699
+4052067495,Joseph,Hunt,M,43,M,11497 State Highway 39,,Blanchard,Mcclain,OK,73010,O,F,$45000 - $49999,500-549
+4053065156,Elizabeth A,Dow,F,35,S,1413 Jamestown,,Edmond,Oklahoma,OK,73003,O,J,$150000 - $174999,750-799
+4053065156,Elizabeth,Dow,F,35,U,100 Ne 4Th St,Apt 4206,Oklahoma City,Oklahoma,OK,73104,U,U,$10000 - $14999,Unknown
+4053065156,Melaney A,Dow,F,62,M,1413 Jamestown,,Edmond,Oklahoma,OK,73003,O,J,$150000 - $174999,750-799
+4053065156,Neely M,Dow,F,39,S,1413 Jamestown,,Edmond,Oklahoma,OK,73003,O,J,$150000 - $174999,750-799
+4053343985,Rachel,Avilez,F,55,M,2115 N Sangre Rd,,Stillwater,Payne,OK,74075,R,U,$40000 - $44999,550-599
+4057144632,Jay A,Ogle,M,26,U,2657 S Winston Ave,,Tulsa,Tulsa,OK,74114,U,U,$40000 - $44999,700-749
+4059334270,Devin,Mackey,M,67,M,282 Dixon Rd,,Lancaster,Lancaster,SC,29720,O,E,$50000 - $54999,750-799
+4059334270,Steven D,Sneed,M,62,M,209 Oliver Dr,,Anadarko,Caddo,OK,73005,O,H,$100000 - $149999,750-799
+4065655085,Michael E,Diploma,M,52,S,501 W Granite St,Apt 311,Butte,Silver Bow,MT,59701,O,D,$10000 - $14999,500-549
+4075521035,Kite,Mckenzie,F,32,S,850 N University Ave,Apt 303,Provo,Utah,UT,84604,R,U,$45000 - $49999,650-699
+4077220149,Minh Thi N,Nguyen,F,26,S,17719 Lily Blossom Ln,,Orlando,Orange,FL,32820,O,M,$65000 - $74999,650-699
+4078442755,Evelina,Figueroa,F,41,S,551 Peace Dr,,Kissimmee,Polk,FL,34759,U,U,$15000 - $19999,Unknown
+4083945310,Chau,Lam,F,37,S,246 Amberwind Cir,,Oakley,Contra Costa,CA,94561,R,U,$35000 - $39999,Unknown
+4085104111,Joshua,Tsuei,M,27,U,11220 Terra Bella Dr,,Cupertino,Santa Clara,CA,95014,O,S,$200000 - $249999,800+
+4085104111,Rebecca,Tsuei,F,30,S,11220 Terra Bella Dr,,Cupertino,Santa Clara,CA,95014,O,S,$200000 - $249999,750-799
+4085104111,Yuh-Sheng E,Tsuei,M,65,M,11220 Terra Bella Dr,,Cupertino,Santa Clara,CA,95014,O,S,$200000 - $249999,800+
+4087576948,Andrew,Oliver,M,78,M,14467 Branham Ln,,San Jose,Santa Clara,CA,95124,O,S,$250000 +,650-699
+4087576948,Meryl,Oliver,F,53,M,14467 Branham Ln,,San Jose,Santa Clara,CA,95124,O,S,$250000 +,650-699
+4088923021,Tam,Do,F,42,S,2778 Murtha Dr,,San Jose,Santa Clara,CA,95127,O,R,$50000 - $54999,650-699
+4107076078,Maureen,Kelley,F,37,S,2314 Rockwell Ave,,Catonsville,Baltimore,MD,21228,O,N,$100000 - $149999,700-749
+4128743198,Maurice D,Satterwhite,M,25,S,803 Gallion Ave,,Pittsburgh,Allegheny,PA,15226,R,U,$40000 - $44999,Unknown
+4134750642,Nima,Patidar,F,32,S,463 Memorial Dr,,Chicopee,Hampden,MA,1020,U,U,$20000 - $24999,Unknown
+4143506091,April L,Mbida,F,44,M,3302 N 86Th St,,Milwaukee,Milwaukee,WI,53222,O,I,$100000 - $149999,650-699
+4144264651,Katie M,Brown,F,73,M,2353 N Palmer St,,Milwaukee,Milwaukee,WI,53212,O,D,$75000 - $99999,550-599
+4144777958,Andrea R,Buretta,F,66,S,3872 S Lake Dr,Unit 207,Saint Francis,Milwaukee,WI,53235,O,U,$20000 - $24999,700-749
+4147592022,Mary M,Spadafora,F,69,S,2640 N 49Th St,,Milwaukee,Milwaukee,WI,53210,O,U,$25000 - $29999,500-549
+4147954707,Wayne J,Roers,M,80,S,20860 Watertown Rd,,Waukesha,Waukesha,WI,53186,O,J,$60000 - $64999,800+
+4155174099,Walter E,Sipe,M,50,S,2825 Ridgegate Row,,La Jolla,San Diego,CA,92037,O,U,$250000 +,Unknown
+4155174099,Zoe,Sipe,F,49,M,2353 Leimert Blvd,,Oakland,Alameda,CA,94602,O,S,$100000 - $149999,750-799
+4155773298,Lester L,Chan,M,67,M,252 University St,,San Francisco,San Francisco,CA,94134,O,S,$100000 - $149999,700-749
+4173968570,Anna M,Tarbet,F,42,M,2005 S 16Th St,,Rogers,Benton,AR,72758,O,I,$75000 - $99999,700-749
+4193081538,Tamara M,Hilty,F,70,M,21 Parkwood Dr,,Bowling Green,Wood,OH,43402,O,O,$100000 - $149999,650-699
+4193442846,Allyson L,Keefer,F,34,S,5859 Alexa Ln,,Sylvania,Lucas,OH,43560,O,U,$100000 - $149999,650-699
+4196023393,Hamilton,Stuart,M,1,U,25 W Main St,,Berlin Heights,Erie,OH,44814,U,U,$60000 - $64999,650-699
+4199848834,Tassionette A,Perryman,U,35,S,833 Brookley Blvd,,Toledo,Lucas,OH,43607,U,U,$30000 - $34999,600-649
+4238637335,Bart,Harrold,M,54,M,80 Quail Creek Ct,,Jonesborough,Washington,TN,37659,O,Q,$65000 - $74999,750-799
+4238637335,Kendra J,Harrold,F,55,S,80 Quail Creek Ct,,Jonesborough,Washington,TN,37659,O,Q,$65000 - $74999,750-799
+4238637335,Shannon,Harrold,F,54,S,80 Quail Creek Ct,,Jonesborough,Washington,TN,37659,O,Q,$65000 - $74999,Unknown
+4252522937,Joyce,Morris,F,57,S,2909 Victor Pl,,Everett,Snohomish,WA,98201,R,U,Under $10000,600-649
+4402261610,Jaclyn M,Liccardi,F,36,M,13717 Blazey Trl,,Strongsville,Cuyahoga,OH,44136,O,K,$100000 - $149999,Unknown
+4402261610,Jaclyn,Burdette,F,36,U,970 Buttonwood Ln,,Brunswick,Medina,OH,44212,O,J,$100000 - $149999,650-699
+4432403814,John,Fedd,M,37,U,3203 Beverly Rd,,Baltimore,Baltimore City,MD,21214,O,M,Unknown,750-799
+4433733695,Elaine C,Colbert,F,64,M,42115 Woodland Rd,,Mechanicsville,Saint Marys,MD,20659,O,U,$100000 - $149999,500-549
+4434650548,Narender,Bharaj,M,49,M,9820 Anvil Ct,,Perry Hall,Baltimore,MD,21128,O,R,$200000 - $249999,650-699
+4436408085,Kimberly M,Yarborough,F,33,S,628 Mckewin Ave,,Baltimore,Baltimore City,MD,21218,R,U,$35000 - $39999,600-649
+4436427506,Clark D,Jukes,M,53,S,1919 Seaborn Dr,,North Augusta,Aiken,SC,29841,O,E,$10000 - $14999,550-599
+4437898530,Shannon,Mays,U,32,S,607 Wagon Rd,,Morehead City,Carteret,NC,28557,U,U,Unknown,Unknown
+4693605515,Suzie J,Ahmed,F,47,S,2009 Walnut Creek Trl,,Garland,Dallas,TX,75040,O,N,$100000 - $149999,700-749
+4694180462,Monica,Bell,F,58,U,15889 Preston Rd,Apt 1130,Dallas,Dallas,TX,75248,U,U,$100000 - $149999,600-649
+4694500262,Haley M,Espinosa,F,26,U,18022 Langford Ln,,Forney,Kaufman,TX,75126,O,Q,$100000 - $149999,Unknown
+4694500262,Martin,Espinoza,M,51,M,18022 Langford Ln,,Forney,Kaufman,TX,75126,O,Q,$100000 - $149999,650-699
+4694500262,Matthew M,Espinosa,M,23,M,18022 Langford Ln,,Forney,Kaufman,TX,75126,O,Q,$100000 - $149999,650-699
+4694500262,Ruthie,Espinosa,F,52,M,18022 Langford Ln,,Forney,Kaufman,TX,75126,O,Q,$100000 - $149999,650-699
+4784574730,Vincent,Mcpherson,M,28,U,342 N Lake Dr,,Sandersville,Washington,GA,31082,O,J,$50000 - $54999,700-749
+5023707105,Eric,Abney,M,26,U,2813 S 3Rd St,,Louisville,Jefferson,KY,40208,U,U,$25000 - $29999,500-549
+5042142722,April,Rieveschl,F,73,S,1322 7Th St,,New Orleans,Orleans,LA,70115,O,U,$100000 - $149999,750-799
+5046138652,Harry P,Christophe,M,81,M,6631 Dorchester St,,New Orleans,Orleans,LA,70126,O,L,$175000 - $199999,600-649
+5048106988,Alexandra,Chauvin,F,22,U,3604 Neyrey Dr,,Metairie,Jefferson,LA,70002,O,N,$200000 - $249999,750-799
+5048106988,Bradley J,Chauvin,M,58,M,3604 Neyrey Dr,,Metairie,Jefferson,LA,70002,O,N,$200000 - $249999,750-799
+5052281572,Frederic,Boehm,M,33,S,7401 San Pedro Dr Ne,Trlr 82,Albuquerque,Bernalillo,NM,87109,U,U,$25000 - $29999,600-649
+5052281572,Kathryn E,Boehm,F,33,M,7401 San Pedro Dr Ne,Trlr 82,Albuquerque,Bernalillo,NM,87109,U,U,$25000 - $29999,600-649
+5054333994,Jesse D,Benedict,M,76,S,9110 Aspen Ave Ne,,Albuquerque,Bernalillo,NM,87112,O,M,$75000 - $99999,650-699
+5082699695,Conor,Ryan,M,28,S,219 Kelley Blvd,,North Attleboro,Bristol,MA,2760,O,Q,$100000 - $149999,500-549
+5082699695,Lori J,Ryan,F,54,M,219 Kelley Blvd,,North Attleboro,Bristol,MA,2760,O,Q,$100000 - $149999,650-699
+5082699695,Miranda L,Ryan,F,32,S,219 Kelley Blvd,,North Attleboro,Bristol,MA,2760,O,Q,$100000 - $149999,500-549
+5082699695,Philip P,Ryan,M,55,M,219 Kelley Blvd,,North Attleboro,Bristol,MA,2760,O,Q,$100000 - $149999,500-549
+5095993675,Joseph J,Stukel,M,34,S,17623 E Indiana Ave,,Greenacres,Spokane,WA,99016,O,J,Under $10000,600-649
+5095993675,Michael A,Stukel,M,32,S,17623 E Indiana Ave,,Greenacres,Spokane,WA,99016,O,J,Under $10000,600-649
+5095993675,Tom J,Stukel,M,88,M,17623 E Indiana Ave,,Greenacres,Spokane,WA,99016,O,J,Under $10000,600-649
+5104597545,Fred T,Gonzalez,U,53,S,3650 Delmont Ave,,Oakland,Alameda,CA,94605,O,M,$100000 - $149999,700-749
+5123779904,Teresa,Brown,F,39,S,14701 Jacobson Rd,,Del Valle,Travis,TX,78617,R,U,$35000 - $39999,Unknown
+5125500960,Mary C,Flinn,F,57,S,8101 Billy Bonney Ct,,Austin,Travis,TX,78749,O,Q,$100000 - $149999,600-649
+5132900131,Abdel,Toure,M,44,S,8501 Constitution Dr,,Cincinnati,Hamilton,OH,45215,U,U,$35000 - $39999,700-749
+5135040454,Holly J,Eichert,F,35,S,7104 Bluecrest Dr,,Cincinnati,Hamilton,OH,45230,O,H,$100000 - $149999,650-699
+5157828575,Bajro,Ramic,M,56,M,703 Sw 48Th St,,Ankeny,Polk,IA,50023,O,K,$100000 - $149999,700-749
+5162327723,Rebecca M,Frein,F,28,S,12 Walnut Ave E,,Farmingdale,Nassau,NY,11735,O,P,$100000 - $149999,650-699
+5162327723,Sabrina A,Frein,F,30,S,12 Walnut Ave E,,Farmingdale,Nassau,NY,11735,O,P,$100000 - $149999,650-699
+5163198188,Carly J,Donohue,F,23,M,26 Woodvale Ave,,Kings Park,Suffolk,NY,11754,O,R,$250000 +,600-649
+5163225944,Maggie R,Murnane,F,28,M,104 Wetherill Rd,,Garden City,Nassau,NY,11530,O,S,$150000 - $174999,650-699
+5163225944,Mary K,Murnane,F,31,S,104 Wetherill Rd,,Garden City,Nassau,NY,11530,O,S,$150000 - $174999,650-699
+5163225944,Michael F,Murnane,M,24,M,104 Wetherill Rd,,Garden City,Nassau,NY,11530,O,S,$150000 - $174999,650-699
+5164308217,Tam,Nguyen,F,46,S,29 Firethorne Ln,,Valley Stream,Nassau,NY,11581,O,Q,$175000 - $199999,700-749
+5164770434,Patricia,Redmond,F,58,U,95 Hampton Vista Dr,,Manorville,Suffolk,NY,11949,O,N,$35000 - $39999,700-749
+5173980428,Linda S,Beck,U,62,S,2601 Clifton Ave,,Lansing,Ingham,MI,48910,O,H,$55000 - $59999,650-699
+5175809530,Sara E,Pawluk,F,22,U,19648 The Place Blvd,,Estero,Lee,FL,33928,O,Q,Unknown,Unknown
+5203120901,Jeri,Garcia,F,53,S,2192 E Calle Arroyo Lindo,,Tucson,Pima,AZ,85706,R,U,$15000 - $19999,650-699
+5209049364,Virginia J,Soliz,F,36,S,1058 Fordham Rd,,Columbus,Franklin,OH,43224,U,U,$10000 - $14999,650-699
+5408471936,Nicole,Thomas,F,40,M,4201 Bridlepath Ct,,Fredericksburg,Spotsylvania,VA,22408,O,Q,$100000 - $149999,800+
+5415161045,Mike,Sorensen,M,52,S,716 Sw Highland Ave,,Redmond,Deschutes,OR,97756,U,U,$25000 - $29999,650-699
+5593806641,Ngan,Oliver,M,1,U,1580 Brightwood St,,Monterey Park,Los Angeles,CA,91754,U,U,$100000 - $149999,750-799
+5595799554,Melody,Pagalan,F,42,S,3436 N Jason Ave,,Fresno,Fresno,CA,93737,O,P,$75000 - $99999,Unknown
+5597041485,Abraham,Pena,U,37,U,41172 Fig Grove Ct,,Madera,Madera,CA,93636,U,U,$100000 - $149999,700-749
+5615983662,Jahnigh A,Lawrence,U,25,M,373 Nw 19Th St,,Pompano Beach,Broward,FL,33060,U,U,$20000 - $24999,550-599
+5618186357,Dennis J,Schneider,M,82,M,Po Box 513,,Goodland,Collier,FL,34140,U,U,$75000 - $99999,800+
+5623771027,Rommel C,Dalena,M,41,S,2601 Marber Ave,,Long Beach,Los Angeles,CA,90815,O,R,$75000 - $99999,750-799
+5704124096,Matthew R,Rook,M,24,U,1002 Caracara Dr,,New Bern,Craven,NC,28560,O,M,$100000 - $149999,Unknown
+5706045243,Deborah A,Glodzik,F,64,M,4 Foundry St,,Old Forge,Lackawanna,PA,18518,O,D,$75000 - $99999,600-649
+5706045243,Jennifer L,Glodzik,F,43,S,2 Foundry St,,Old Forge,Lackawanna,PA,18518,O,G,$75000 - $99999,550-599
+5743396711,Margaret A,Ribby,F,41,S,1310 Salem Cir,,Bowling Green,Warren,KY,42101,O,I,$35000 - $39999,650-699
+5757143192,Jessica,Maldonado,F,38,M,304 Cactus Dr,,Clovis,Curry,NM,88101,O,U,$30000 - $34999,700-749
+5803189415,Kortnei,Skelton,U,33,U,1205 Kingston Blvd,,Edmond,Oklahoma,OK,73034,U,U,$50000 - $54999,750-799
+5804845492,Brenda,Alvarado,F,33,S,1109 N 14Th St,,Enid,Garfield,OK,73701,O,C,$35000 - $39999,700-749
+5804845492,Margarita,Alvarado,F,63,M,1109 N 14Th St,,Enid,Garfield,OK,73701,O,C,$35000 - $39999,700-749
+5856135427,Luis O,Rivera,M,63,M,77 Fleetwood Dr,,Rochester,Monroe,NY,14609,O,G,$45000 - $49999,750-799
+5856135427,Nelida,Rivera,F,63,M,77 Fleetwood Dr,,Rochester,Monroe,NY,14609,O,G,$45000 - $49999,750-799
+6013074308,Elliot B,Roberts,M,36,M,312 S 15Th Ave,,Hattiesburg,Forrest,MS,39401,O,E,$35000 - $39999,700-749
+6024357700,Sean,Bonner,M,34,S,7011 S 30Th Ln,,Phoenix,Maricopa,AZ,85041,U,U,$30000 - $34999,600-649
+6025247110,Edmundo E,Hidalgo,M,60,M,1785 E Balsam Pl,,Chandler,Maricopa,AZ,85286,O,S,$250000 +,Unknown
+6026776931,Jared R,Stone,M,35,S,3639 W Wahalla Ln,,Glendale,Maricopa,AZ,85308,O,L,$65000 - $74999,600-649
+6027146780,Brett M,Stevens,M,55,M,9143 W Charleston Ave,,Peoria,Maricopa,AZ,85382,O,O,$75000 - $99999,550-599
+6029994843,Karen,Sheridan,F,38,M,6847 N 4Th Ave,,Phoenix,Maricopa,AZ,85013,O,R,$200000 - $249999,650-699
+6029994843,Zachary D,Sheridan,M,43,M,6847 N 4Th Ave,,Phoenix,Maricopa,AZ,85013,O,R,$200000 - $249999,650-699
+6037704077,Sheryl A,Kamman,F,75,S,1419 Dodge Hill Rd,,Henniker,Merrimack,NH,3242,O,P,$75000 - $99999,700-749
+6072273075,Christi M,Boothe,F,51,M,2456 Elkwood Cir,,Charlotte,Mecklenburg,NC,28205,U,U,$15000 - $19999,700-749
+6082940220,Charleton Q,Smith,M,1,S,210 Langdon St,,Madison,Dane,WI,53703,U,U,$35000 - $39999,650-699
+6082940220,Charleton Q,Smith,M,1,S,210 Langdon St,,Madison,Dane,WI,53703,U,U,$35000 - $39999,650-699
+6085564044,Kevin,Conroy,M,58,M,309 Lakewood Blvd,,Madison,Dane,WI,53704,O,S,$250000 +,650-699
+6085564044,Meghan M,Conroy,F,30,S,309 Lakewood Blvd,,Madison,Dane,WI,53704,O,S,$250000 +,650-699
+6099234224,Lindsey,Wiegers,F,43,S,1068 Buckingham Dr,,Thorofare,Gloucester,NJ,8086,R,U,$65000 - $74999,750-799
+6107160526,Allison S,Mazzotta,F,32,S,1 Alfred Park,,Haverhill,Essex,MA,1835,O,O,$100000 - $149999,650-699
+6126448021,Jenny,Castillo,F,1,U,90 66Th Way Ne,,Minneapolis,Anoka,MN,55432,O,M,$75000 - $99999,700-749
+6126448021,Jenny,Castillo,F,1,U,90 66Th Way Ne,,Minneapolis,Anoka,MN,55432,O,M,$75000 - $99999,700-749
+6143525324,Brandon J,Wilkins,M,39,S,3477 Binbrook Rd N,,Columbus,Franklin,OH,43227,O,G,$45000 - $49999,650-699
+6143525324,Bryan A,Wilkins,M,35,M,3477 Binbrook Rd N,,Columbus,Franklin,OH,43227,O,G,$45000 - $49999,Unknown
+6143525324,Stacy,Kadri,U,51,S,7697 Barkwood Dr,Apt 1D,Columbus,Franklin,OH,43085,O,F,$60000 - $64999,600-649
+6143699301,Scholastica,Anyingoh,F,1,U,10144 Chantry Pl,,Pickerington,Fairfield,OH,43147,O,N,$100000 - $149999,750-799
+6145569545,David E,Bailey,M,37,M,1810 Aggie Ct,,Columbus,Franklin,OH,43223,O,K,$45000 - $49999,600-649
+6145569545,Jennifer,Bailey,F,42,M,1810 Aggie Ct,,Columbus,Franklin,OH,43223,O,K,$45000 - $49999,600-649
+6146689724,Debra,Vogel,F,56,M,9512 Fox Trot Ln,,Boca Raton,Palm Beach,FL,33496,O,Q,$100000 - $149999,700-749
+6146689724,Illana,Vogel,F,26,S,9512 Fox Trot Ln,,Boca Raton,Palm Beach,FL,33496,O,Q,$100000 - $149999,700-749
+6146689724,Richard L,Vogel,M,58,M,9512 Fox Trot Ln,,Boca Raton,Palm Beach,FL,33496,O,Q,$100000 - $149999,700-749
+6148055539,Jason T,Person,M,43,S,4424 Bayshore Cir,,Tallahassee,Leon,FL,32309,O,K,$45000 - $49999,650-699
+6148055539,Rebeca,Person,F,38,U,4424 Bayshore Cir,,Tallahassee,Leon,FL,32309,O,K,$45000 - $49999,700-749
+6155123732,Heather N,Mcdonald,F,61,M,401 Glenway Cv,,Lebanon,Wilson,TN,37087,O,R,$75000 - $99999,750-799
+6156368671,Brittanie R,Reid,F,29,S,114 Hearthstone Dr,,Portland,Sumner,TN,37148,R,U,$45000 - $49999,600-649
+6156368671,Justin Tyler,Reid,M,27,U,114 Hearthstone Dr,,Portland,Sumner,TN,37148,R,U,$45000 - $49999,600-649
+6156638872,Ronald H,Robinson,M,55,M,3031 Westerly Dr,,Franklin,Williamson,TN,37067,O,R,$250000 +,650-699
+6156638872,Tamar A,Robinson,F,41,M,3031 Westerly Dr,,Franklin,Williamson,TN,37067,O,R,$250000 +,650-699
+6163225133,Dennis L,Wright,M,56,S,4665 Aldun Ridge Ave Nw,Apt 303C,Comstock Park,Kent,MI,49321,O,U,$25000 - $29999,700-749
+6164566571,Carol J,Bennett,F,78,M,920 Chippewa Dr Se,,Grand Rapids,Kent,MI,49506,O,Q,$75000 - $99999,800+
+6164566571,Daniel,Bennett,M,77,S,920 Chippewa Dr Se,,Grand Rapids,Kent,MI,49506,O,Q,$75000 - $99999,800+
+6169018564,Kristyn,Haviland,F,28,S,5558 Dobbin Dr Se,,Caledonia,Kent,MI,49316,R,U,$65000 - $74999,600-649
+6173472391,Jeffrey H,Weiner,M,52,M,266 Lowell St,,Wakefield,Middlesex,MA,1880,O,Q,$250000 +,750-799
+6173472391,Katharine A,Weiner,F,49,M,266 Lowell St,,Wakefield,Middlesex,MA,1880,O,Q,$250000 +,750-799
+6175100931,Jane F,Tracy Jr,M,74,M,87 Mount Vernon St,,West Roxbury,Suffolk,MA,2132,O,R,Unknown,650-699
+6177569318,Kristian,Bryant,F,64,S,761 Columbia Rd,Apt 2,Dorchester,Suffolk,MA,2125,U,U,$20000 - $24999,650-699
+6177755340,Jeff M,Palacios,M,51,M,4 Bishop St,Unit 402,Framingham,Middlesex,MA,1702,O,P,$100000 - $149999,650-699
+6186705668,Jenny,Hosler,F,37,S,6 Harriett Ct,,Granite City,Madison,IL,62040,O,J,$25000 - $29999,550-599
+6186705668,Joshua R,Hosler,M,38,U,6 Harriett Ct,,Granite City,Madison,IL,62040,O,J,$25000 - $29999,750-799
+6196023440,Beatriz,Tinoco,F,39,S,1447 Darwin Ct,,San Jose,Santa Clara,CA,95122,O,R,$75000 - $99999,650-699
+6197883809,Ezekiel,De La Rosa,M,32,S,2482 B St,Apt 2,San Diego,San Diego,CA,92102,U,U,$20000 - $24999,700-749
+6232031321,Scott L,Bamby,M,51,M,2715 Pumpkin St,,Clinton,Prince Georges,MD,20735,O,Q,$250000 +,750-799
+6266797149,Manuel,Mercado,M,49,S,605 N Dos Robles Pl,,Alhambra,Los Angeles,CA,91801,O,M,$75000 - $99999,550-599
+6266797149,Sylvia,Mercado,F,80,M,605 N Dos Robles Pl,,Alhambra,Los Angeles,CA,91801,O,M,$75000 - $99999,550-599
+6268635891,Wendy,Lin,F,66,S,16482 Monte Cristo Dr,,Hacienda Heights,Los Angeles,CA,91745,O,S,$100000 - $149999,700-749
+6305364876,Mimoza,Nico,F,53,M,1441 Queensgreen Cir,,Naperville,Dupage,IL,60563,O,I,$65000 - $74999,700-749
+6305364876,Nicole L,Minale,F,1,S,1436 Queensgreen Cir,,Naperville,Dupage,IL,60563,U,U,$60000 - $64999,700-749
+6305364876,Vasillaq,Nico,M,59,M,1441 Queensgreen Cir,,Naperville,Dupage,IL,60563,O,I,$65000 - $74999,700-749
+6307309885,Robert A,Nowak,U,56,S,2459 Crestline St,,Ferndale,Whatcom,WA,98248,O,Q,$100000 - $149999,650-699
+6313834708,Jade F,Isaacs,F,31,S,64 Connecticut Ave,,Bay Shore,Suffolk,NY,11706,O,Q,$75000 - $99999,700-749
+6314861049,Karamat,Miran,M,79,M,15 Caton St,,East Northport,Suffolk,NY,11731,O,R,$100000 - $149999,750-799
+6314861049,Kausar P,Miran,F,68,M,15 Caton St,,East Northport,Suffolk,NY,11731,O,R,$100000 - $149999,750-799
+6314861049,Owais A,Miran,M,36,S,15 Caton St,,East Northport,Suffolk,NY,11731,O,R,$100000 - $149999,750-799
+6316979523,Samantha L,Sommer,F,28,S,180 Ugedaliyvi Ct,,Brevard,Transylvania,NC,28712,U,U,$250000 +,Unknown
+6317939481,Mary,Cipriano,F,30,U,828 Woodland Ct,,Coram,Suffolk,NY,11727,U,U,$50000 - $54999,650-699
+6318051735,Roxanna,Reyes,F,34,S,85 Gordon Ave,,West Babylon,Suffolk,NY,11704,O,Q,$50000 - $54999,600-649
+6462042295,Danielle L,Matias,F,40,S,139 Payson Ave,Apt 5I,New York,New York,NY,10034,U,U,$65000 - $74999,700-749
+6462042295,Diana,Matias,F,60,M,139 Payson Ave,Apt 5I,New York,New York,NY,10034,O,H,$65000 - $74999,650-699
+6462091841,Shaquana,Mincey,F,45,S,14301 110Th Ave,,Jamaica,Queens,NY,11435,O,Q,$65000 - $74999,600-649
+6462670776,Jon,Fassenfeld,M,58,M,421 Wanamaker St,,Oceanside,Nassau,NY,11572,O,R,$200000 - $249999,700-749
+6462677745,Aaron A,Auguiste,M,1,S,575 Ocean Ave,Apt 5D,Brooklyn,Kings,NY,11226,R,U,$25000 - $29999,600-649
+6462677745,Aaron A,Auguiste,M,47,S,22 S Covert Ave,,Elmont,Nassau,NY,11003,O,L,$100000 - $149999,650-699
+6462886387,Monise,Robinson,F,38,S,1811 Hyden Pl,,Woodbridge,Prince William,VA,22191,R,U,$15000 - $19999,700-749
+6616231104,Lynzie K,Healy,U,36,S,9512 Godiva Ave,,Bakersfield,Kern,CA,93311,R,U,$20000 - $24999,650-699
+6619000978,Johnathan,Holmes,M,35,S,14513 Glover Ct,,Bakersfield,Kern,CA,93314,O,Q,$100000 - $149999,700-749
+6625607317,Christopher B,Houston,M,43,M,35 Looxahoma Tyro Rd,,Senatobia,Tate,MS,38668,O,J,$40000 - $44999,550-599
+6625607317,Tiffany R,Houston,F,42,M,35 Looxahoma Tyro Rd,,Senatobia,Tate,MS,38668,O,J,$40000 - $44999,550-599
+6785481920,Alyssa M,Garrett,F,35,S,455 Baron Dr,# A,Monroe,Walton,GA,30655,U,U,$10000 - $14999,500-549
+6785481920,Blondean G,Garrett,F,61,S,455 Baron Dr,# A,Monroe,Walton,GA,30655,U,U,$10000 - $14999,500-549
+6789069433,Jeffrey N,Gladstein,M,60,M,247 Rosshandler Rd,,Suwanee,Gwinnett,GA,30024,O,Q,Unknown,Unknown
+6789069433,Michael,Gladstein,M,29,S,247 Rosshandler Rd,,Suwanee,Gwinnett,GA,30024,O,Q,Unknown,Unknown
+6789069433,Mitchell D,Gladstein,M,27,S,247 Rosshandler Rd,,Suwanee,Gwinnett,GA,30024,O,Q,Unknown,Unknown
+6789069433,Samantha,Gladstein,F,25,U,247 Rosshandler Rd,,Suwanee,Gwinnett,GA,30024,O,Q,Unknown,Unknown
+6825976142,William R,Yarbrough,M,69,U,300 Boston St,,Nocona,Montague,TX,76255,O,G,$10000 - $14999,Unknown
+6825976142,William R,Yarbrough,M,69,U,300 Boston St,,Nocona,Montague,TX,76255,O,G,$10000 - $14999,Unknown
+7027545421,Christopher,Ruch,M,51,M,Po Box 1328,,Hawthorne,Mineral,NV,89415,U,U,$10000 - $14999,Unknown
+7027545421,Sharon,Ruch,F,53,U,Po Box 1328,,Hawthorne,Mineral,NV,89415,U,U,$10000 - $14999,Unknown
+7028222600,Torrance T,Tolson,M,51,S,2132 Bennett St,,North Las Vegas,Clark,NV,89030,R,U,$25000 - $29999,600-649
+7036986151,Susan A,Snider,F,30,S,2354 Central Ave,,Vienna,Fairfax,VA,22182,O,S,$250000 +,750-799
+7039678396,Kent E,Willard,F,53,M,5645 5Th St N,,Arlington,Arlington,VA,22205,O,S,$250000 +,700-749
+7042401656,Carla,Broyhill,F,1,U,6213 Ward Gap Rd,,Casar,Cleveland,NC,28020,O,H,$40000 - $44999,700-749
+7042401656,Stephanie,Broyhill,F,56,S,6213 Ward Gap Rd,Apt 1,Casar,Cleveland,NC,28020,O,U,$15000 - $19999,750-799
+7044921298,Juan,Rocha,M,51,S,145 Julio Ln,,Garner,Wake,NC,27529,O,D,$65000 - $74999,600-649
+7044921298,Martha M,Rocha,F,74,S,145 Julio Ln,,Garner,Wake,NC,27529,O,D,$65000 - $74999,600-649
+7047969037,Anita K,Spitzhoff,F,71,M,1515 Thompson Dr,,Concord,Cabarrus,NC,28025,O,O,$100000 - $149999,750-799
+7047969037,Jonathan D,Spitzhoff,M,71,M,1515 Thompson Dr,,Concord,Cabarrus,NC,28025,O,O,$100000 - $149999,750-799
+7047969037,Timothy A,Spitzhoff,M,34,S,1515 Thompson Dr,,Concord,Cabarrus,NC,28025,O,O,$100000 - $149999,Unknown
+7063913680,Jada D,Duke,F,26,U,4943 Highway 184 N,,Toccoa,Stephens,GA,30577,U,U,$45000 - $49999,800+
+7065402868,Abigail,Randle,F,34,S,798 Larry Ln,,Decatur,Dekalb,GA,30033,U,U,$100000 - $149999,600-649
+7065402868,Joanie P,Randle,F,64,M,798 Larry Ln,,Decatur,Dekalb,GA,30033,U,U,$100000 - $149999,600-649
+7065402868,Mason P,Randle,M,36,S,798 Larry Ln,,Decatur,Dekalb,GA,30033,U,U,$100000 - $149999,600-649
+7065402868,William M,Randle Ii,M,69,M,798 Larry Ln,,Decatur,Dekalb,GA,30033,U,U,$100000 - $149999,600-649
+7082626961,Vishal,Patel,M,38,M,11414 Boulder Dr,,Orland Park,Cook,IL,60467,O,Q,$100000 - $149999,Unknown
+7089490190,Husni,Khalifeh,M,53,S,3501 S 52Nd Ct,,Cicero,Cook,IL,60804,O,A,$25000 - $29999,600-649
+7133825553,Cherterrica,Heathmon,U,39,S,8702 Glenhouse Ct,,Houston,Harris,TX,77088,O,J,$55000 - $59999,600-649
+7142323150,Robert D,Zuniga,M,44,S,4832 King Cir,Apt A,Huntington Beach,Orange,CA,92649,R,U,$15000 - $19999,700-749
+7143265527,Usman,Azeem,U,38,M,3184 Vista Ter,,Riverside,Riverside,CA,92503,O,R,Unknown,Unknown
+7144580295,Theresa M,Munganga,F,64,M,13451 Barnett Way,,Garden Grove,Orange,CA,92843,O,R,$100000 - $149999,600-649
+7144965130,Alana,Brogdon,F,39,U,2230 W 9Th St,,Santa Ana,Orange,CA,92703,U,U,$75000 - $99999,650-699
+7144965130,Elizabeth M,Brogdon,F,34,S,2230 W 9Th St,,Santa Ana,Orange,CA,92703,U,U,$75000 - $99999,Unknown
+7144965130,Kati E,Hill,F,71,S,1902 Calle Amargosa,,Hemet,Riverside,CA,92545,R,U,$10000 - $14999,550-599
+7147430815,Alexandra C,Collell,F,30,S,8180 E Somerset Ln,,Anaheim,Orange,CA,92808,O,Q,$250000 +,650-699
+7147430815,Austin J,Collell,M,33,S,8180 E Somerset Ln,,Anaheim,Orange,CA,92808,O,Q,$250000 +,650-699
+7148295776,Ruben,Urrego,M,64,S,8505 Kester Ave,,Panorama City,Los Angeles,CA,91402,O,U,$35000 - $39999,650-699
+7153790365,Brian A,Thiess,M,68,M,E6867 County Road V,,Fall Creek,Eau Claire,WI,54742,O,N,$75000 - $99999,650-699
+7192175245,Freddie,Barraza,M,67,S,5280 Bunk House Ln,,Colorado Springs,El Paso,CO,80917,R,U,$60000 - $64999,750-799
+7193602090,Stephen D,Banta,M,30,U,6480 Balance Cir,,Colorado Springs,El Paso,CO,80923,O,O,$60000 - $64999,650-699
+7202885090,Joel M,Warner,M,45,S,2303 W 41St Ave,,Denver,Denver,CO,80211,O,Q,$100000 - $149999,550-599
+7202983221,Ryan J,Osler,M,24,S,1632 Clermont St,,Denver,Denver,CO,80220,O,Q,$175000 - $199999,750-799
+7205394412,Marci,Kirkpatrick,F,49,U,11358 W Radcliffe Dr,,Littleton,Jefferson,CO,80127,O,Q,$100000 - $149999,750-799
+7245538230,Kimberly,Jahoda,F,52,S,155 Lewisham Rd,,Cranberry Township,Butler,PA,16066,O,L,$100000 - $149999,750-799
+7249141645,Mary E,Rothka,F,76,M,509 Mcnary St,,Canonsburg,Washington,PA,15317,O,F,$10000 - $14999,600-649
+7274802639,Arnold H,Orlick,M,96,S,7881 9Th Ave S,,Saint Petersburg,Pinellas,FL,33707,O,S,$200000 - $249999,750-799
+7274802639,Sharon S,Orlick,F,88,A,7881 9Th Ave S,,Saint Petersburg,Pinellas,FL,33707,O,S,$200000 - $249999,750-799
+7314460036,Judith A,Mclaughlin,F,70,M,506 2Nd St,,Trenton,Mercer,NJ,8611,O,E,$40000 - $44999,700-749
+7317804337,Teresa L,Richardson,F,56,S,101 Westside Cir,,Zebulon,Wake,NC,27597,U,U,$10000 - $14999,500-549
+7323475550,Kelly A,Susino,F,57,S,6 Shadyside Ave,,Keansburg,Monmouth,NJ,7734,R,U,$10000 - $14999,600-649
+7327579400,Bryan A,Sniffen,M,36,S,825 Norwood Ave,,Long Branch,Monmouth,NJ,7740,R,U,$65000 - $74999,600-649
+7328147583,Damion,Stanziano,M,34,S,1160 Roanoke Dr,,Toms River,Ocean,NJ,8753,O,P,$75000 - $99999,700-749
+7328147583,Doreen A,Stanziano,F,61,M,1160 Roanoke Dr,,Toms River,Ocean,NJ,8753,O,P,$75000 - $99999,700-749
+7328147583,Stephen,Stanziano,M,67,M,1160 Roanoke Dr,,Toms River,Ocean,NJ,8753,O,P,$75000 - $99999,700-749
+7329399078,Rudolph F,Rinderer,M,100,M,Po Box 324,,Pine Beach,Ocean,NJ,8741,U,U,$100000 - $149999,750-799
+7329399078,Sandra M,Rinderer,F,71,M,Po Box 324,,Pine Beach,Ocean,NJ,8741,O,U,$100000 - $149999,750-799
+7402535478,Kari,Molebash,F,39,M,4 E Ing St,,Kingston,Ross,OH,45644,O,I,$100000 - $149999,Unknown
+7402535478,Tricia A,Molebash,F,1,S,4 E Ing St,,Kingston,Ross,OH,45644,O,I,$100000 - $149999,Unknown
+7402535478,Wesley W,Molebash,M,43,M,4 E Ing St,,Kingston,Ross,OH,45644,O,I,$100000 - $149999,Unknown
+7405791841,Kristin,Wittenbrook,F,49,S,50563 Cindy Dr,Apt 1,Saint Clairsville,Belmont,OH,43950,R,U,$10000 - $14999,550-599
+7406466640,Jeannie M,Farris,F,56,S,122 N 6Th St,,Ironton,Lawrence,OH,45638,R,U,$10000 - $14999,650-699
+7575823722,Eddie,Coleman Jr,F,66,M,1445 Manning Rd,,Suffolk,Suffolk City,VA,23434,O,K,$100000 - $149999,700-749
+7575823722,Patricia I,Coleman,F,62,M,1445 Manning Rd,,Suffolk,Suffolk City,VA,23434,O,K,$100000 - $149999,700-749
+7604153062,Cristina,Mclennan,F,30,S,3319 Corte Verso,,Carlsbad,San Diego,CA,92009,O,S,$150000 - $174999,750-799
+7604580840,Joe,Romero,M,58,U,421 Potter St,Apt 606,Fallbrook,San Diego,CA,92028,U,U,$30000 - $34999,600-649
+7609608301,Dennis,Wyatt,M,40,M,1215 Aldrich Way,,Faribault,Rice,MN,55021,O,K,$100000 - $149999,Unknown
+7735630806,Regina,Baltimore-Redea,F,54,S,7044 S Fairfield Ave,,Chicago,Cook,IL,60629,R,U,$25000 - $29999,550-599
+7736916565,Crystal,Barren,F,40,S,7031 S Maplewood Ave,Apt 1,Chicago,Cook,IL,60629,R,U,$10000 - $14999,600-649
+7736916565,Lakeisha S,Barren,F,37,S,7031 S Maplewood Ave,,Chicago,Cook,IL,60629,R,U,$15000 - $19999,600-649
+7736916565,Shawn,Barren,M,51,S,7031 S Maplewood Ave,,Chicago,Cook,IL,60629,U,U,$15000 - $19999,600-649
+7739776880,Brandon,Nikka,F,50,U,1621 N Newcastle Ave,,Elmwood Park,Cook,IL,60707,O,K,$75000 - $99999,650-699
+7739776880,Charles,Brandon,M,43,S,1621 N Newcastle Ave,,Elmwood Park,Cook,IL,60707,O,K,$40000 - $44999,650-699
+7745736423,Rosa F,Jung,F,30,S,1319 Jefferson Pl,,Bellingham,Norfolk,MA,2019,R,U,$65000 - $74999,650-699
+7813676644,Jacques,Lopez,M,46,M,2 Edgewood Rd,,Windham,Rockingham,NH,3087,O,R,$100000 - $149999,650-699
+7813676644,Jennifer,Lopez,F,1,M,2 Edgewood Rd,,Windham,Rockingham,NH,3087,O,R,$100000 - $149999,650-699
+7818850466,Mason,Cardwell,M,21,U,171 Union St,,Randolph,Norfolk,MA,2368,O,P,$65000 - $74999,650-699
+7818850466,Montez R,Cardwell,M,55,S,171 Union St,,Randolph,Norfolk,MA,2368,O,P,$65000 - $74999,600-649
+7854757035,Kim,Wessel,F,35,S,1015 E 15Th St,,Hays,Ellis,KS,67601,R,U,$15000 - $19999,Unknown
+7862016975,Danait,Perez,F,47,M,5800 Sw 20Th St,,Miami,Miami-Dade,FL,33155,O,U,$40000 - $44999,700-749
+7862023884,Cecilia,Molina,F,78,S,9021 Sw 94Th St,Apt 601,Miami,Miami-Dade,FL,33176,O,U,$60000 - $64999,700-749
+7862023884,Fernando A,Molina,M,53,S,9021 Sw 94Th St,Apt 609,Miami,Miami-Dade,FL,33176,O,U,$65000 - $74999,700-749
+7862054456,Alina R,Perez,F,62,M,15020 Sw 69Th Ct,,Miami,Miami-Dade,FL,33158,O,R,$250000 +,700-749
+7862054456,Amanda E,Perez,F,26,M,15020 Sw 69Th Ct,,Miami,Miami-Dade,FL,33158,O,R,$250000 +,700-749
+7862054456,Stephanie,Perez,F,26,U,15020 Sw 69Th Ct,,Miami,Miami-Dade,FL,33158,O,R,$250000 +,700-749
+7862054456,Vivian I,Perez,F,49,M,15020 Sw 69Th Ct,,Miami,Miami-Dade,FL,33158,O,R,$250000 +,650-699
+7863017055,Deydre,Garcia,M,45,S,1125 Nw 125Th Ave,,Miami,Miami-Dade,FL,33182,O,J,$75000 - $99999,650-699
+7863664761,Amado,Cruz,M,55,S,18638 Nw 78Th Ct,,Hialeah,Miami-Dade,FL,33015,O,P,$75000 - $99999,550-599
+7863826531,Carlos A,Peralta,M,60,S,1212 Sw 93Rd Pl,,Miami,Miami-Dade,FL,33174,U,U,$35000 - $39999,650-699
+7864222290,Diana R,Victorero,U,24,S,2101 W 52Nd St,Apt 107,Hialeah,Miami-Dade,FL,33016,R,U,$10000 - $14999,650-699
+7864222290,Diana,Otero,F,60,S,2101 W 52Nd St,Apt 107,Hialeah,Miami-Dade,FL,33016,O,G,$10000 - $14999,550-599
+7864234032,Hamne,Raez,U,41,M,14880 Sw 166Th St,,Miami,Miami-Dade,FL,33187,O,Q,$100000 - $149999,650-699
+7864277272,Elienay,Gonzalez,U,35,U,3332 W 92Nd Pl,,Hialeah,Miami-Dade,FL,33018,O,O,Unknown,Unknown
+7864878410,Federico,Alban Jr,M,83,M,6550 Winfield Blvd,Apt 105,Pompano Beach,Broward,FL,33063,O,C,$75000 - $99999,500-549
+7864878410,Leonardo F,Alban,M,52,S,6550 Winfield Blvd,Apt 105,Pompano Beach,Broward,FL,33063,O,C,$75000 - $99999,500-549
+7864993324,Neiralys,Bu,F,51,M,20001 Nw 57Th Ct,,Hialeah,Miami-Dade,FL,33015,O,P,$175000 - $199999,750-799
+7865060666,Carmen,Suarez,F,41,M,14909 Sw 8Th Ter,,Miami,Miami-Dade,FL,33194,O,N,$65000 - $74999,650-699
+7865060666,Gerardo,Suarez,M,41,M,14909 Sw 8Th Ter,,Miami,Miami-Dade,FL,33194,O,N,$65000 - $74999,650-699
+7865397143,Osbel,Acosta,M,50,U,12249 Sw 249Th St,,Homestead,Miami-Dade,FL,33032,O,O,$60000 - $64999,600-649
+7866830409,Orelvis,Segura,M,52,S,635 Se Park Dr,,Hialeah,Miami-Dade,FL,33010,O,M,$50000 - $54999,600-649
+7867153164,Lester,Herrera,M,1,M,205 Cornwell Way,,Calhoun,Gordon,GA,30701,U,U,$55000 - $59999,Unknown
+7867153164,Ruby,Herrera,F,45,U,205 Cornwell Way,,Calhoun,Gordon,GA,30701,O,J,$55000 - $59999,Unknown
+7867625518,Georgina,Bell,F,1,U,25585 Sw 138Th Pl,,Homestead,Miami-Dade,FL,33032,U,U,$65000 - $74999,600-649
+8012777591,Jamie S,Sacks,U,68,S,3914 Pluto Way,,Salt Lake City,Salt Lake,UT,84124,O,R,$100000 - $149999,700-749
+8014136307,Shelby,Bowman,F,32,S,14176 S Wembley Cir,,Herriman,Salt Lake,UT,84096,O,R,Unknown,Unknown
+8014136307,Tycen E,Bowman,U,33,U,14176 S Wembley Cir,,Herriman,Salt Lake,UT,84096,O,R,Unknown,Unknown
+8014250770,Benjamin D,Claydon,M,46,S,985 Rose Ln,,Santa Barbara,Santa Barbara,CA,93110,O,S,$150000 - $174999,700-749
+8014250770,Michael J,Claydon,M,76,M,985 Rose Ln,,Santa Barbara,Santa Barbara,CA,93110,O,S,$150000 - $174999,700-749
+8018311027,Brandon,Watson,M,44,M,2593 E Kentucky Ave,,Salt Lake City,Salt Lake,UT,84117,U,U,$100000 - $149999,650-699
+8018311027,Kenneth,Watson,M,79,M,2593 E Kentucky Ave,,Salt Lake City,Salt Lake,UT,84117,U,U,$100000 - $149999,650-699
+8018364373,Malcolm R,Reeves,M,74,M,488 Cow Mountain Rd,,Marshall,Madison,NC,28753,O,L,$75000 - $99999,700-749
+8018364373,Rebecca S,Reeves,F,40,S,488 Cow Mountain Rd,,Marshall,Madison,NC,28753,O,L,$75000 - $99999,700-749
+8018364373,Sheila,Reeves,F,72,M,488 Cow Mountain Rd,,Marshall,Madison,NC,28753,O,L,$75000 - $99999,700-749
+8023562944,Tina M,Skehan,F,58,M,Po Box 186,,Hartland,Windsor,VT,5048,O,O,$75000 - $99999,750-799
+8027340178,Max,Danis,M,30,S,2703 Middletown Rd,Apt 2,Pittsburgh,Allegheny,PA,15205,R,U,$25000 - $29999,Unknown
+8034346771,Francisca U,Oladipo,M,56,M,344 Longwood Dr,,Lexington,Lexington,SC,29073,O,M,$55000 - $59999,650-699
+8034346771,Malcom O,Oladipo,M,22,U,344 Longwood Dr,,Lexington,Lexington,SC,29073,O,M,$55000 - $59999,650-699
+8034346771,Tiamiyu J,Oladipo,M,53,M,344 Longwood Dr,,Lexington,Lexington,SC,29073,O,M,$55000 - $59999,650-699
+8034479043,Christopher A,Santos,M,50,M,501 Crawfish Ln,,Irmo,Richland,SC,29063,O,L,$175000 - $199999,Unknown
+8034479043,Sabrina D,Santos,F,22,M,501 Crawfish Ln,,Irmo,Richland,SC,29063,O,L,$175000 - $199999,Unknown
+8034479043,Vanessa B,Santos,F,48,M,501 Crawfish Ln,,Irmo,Richland,SC,29063,O,L,$175000 - $199999,Unknown
+8036823570,Jodie A,Bolin,F,38,M,515 Ringneck Trl,,Orangeburg,Orangeburg,SC,29118,U,U,$60000 - $64999,Unknown
+8044375283,Tashanique S,Burrell,F,45,S,604 E Gladstone Ave,,Richmond,Richmond City,VA,23222,O,J,$35000 - $39999,550-599
+8064079944,Jessica,Drennon,F,42,U,214 N Donley Ave,,Tulia,Swisher,TX,79088,U,U,$40000 - $44999,Unknown
+8086528029,Charlotte B,Liddell,F,70,S,4754 Pelehu Rd,,Kapaa,Kauai,HI,96746,O,Q,$45000 - $49999,600-649
+8109238610,Kyle,Cole,M,53,S,10420 Valley Dr,,Goodrich,Genesee,MI,48438,O,N,$75000 - $99999,700-749
+8109238610,Lisa,Cole,F,53,U,10420 Valley Dr,,Goodrich,Genesee,MI,48438,O,N,$75000 - $99999,700-749
+8122020953,Kenton T,Cottrell,M,27,U,922 W Shelton Rd,,Boonville,Warrick,IN,47601,O,O,$150000 - $174999,Unknown
+8122020953,Sheila E,Cottrell,F,61,M,922 W Shelton Rd,,Boonville,Warrick,IN,47601,O,O,$150000 - $174999,750-799
+8122020953,Tom,Cottrell,M,64,M,922 W Shelton Rd,,Boonville,Warrick,IN,47601,O,O,$150000 - $174999,750-799
+8123698029,Kay,Compton,U,76,S,708 S Cory Ln,Lot 34,Bloomington,Monroe,IN,47403,O,E,$45000 - $49999,700-749
+8123698029,Sharon,Compton,U,76,S,708 S Cory Ln,Lot 34,Bloomington,Monroe,IN,47403,O,E,$45000 - $49999,700-749
+8132632020,Deirdre,Buggs,F,50,S,700 St James Pl,,Canton,Cherokee,GA,30115,O,U,$75000 - $99999,650-699
+8132632020,Leah,Buggs,F,74,S,700 St James Pl,,Canton,Cherokee,GA,30115,O,U,$75000 - $99999,750-799
+8132632020,Romay,Buggs,M,47,S,700 St James Pl,,Canton,Cherokee,GA,30115,O,U,$75000 - $99999,650-699
+8134842529,Anita R,Cabrera,F,54,M,3221 Pleasant Lake Dr,,Tampa,Hillsborough,FL,33618,O,O,$175000 - $199999,700-749
+8159012176,Taylor,Stinnett,M,31,S,1026 Devonshire Dr N,,Sycamore,Dekalb,IL,60178,O,O,$175000 - $199999,750-799
+8177142263,Sumina,Ibrahim,M,55,M,7903 Tin Cup Dr,,Arlington,Tarrant,TX,76001,O,N,$75000 - $99999,650-699
+8282422767,Scott,Hubener,M,45,S,331 Stratford Rd,,Asheville,Buncombe,NC,28804,O,Q,$75000 - $99999,650-699
+8285758119,Elizabeth B,Anderson,F,48,M,269 Foxcroft Dr,,Asheville,Buncombe,NC,28806,O,O,$100000 - $149999,650-699
+8285758119,George T,Anderson,M,47,M,269 Foxcroft Dr,,Asheville,Buncombe,NC,28806,O,O,$100000 - $149999,650-699
+8302632999,Ricki M,Holverson,F,22,U,912 Merritt Dr,,Lockhart,Caldwell,TX,78644,O,M,$75000 - $99999,650-699
+8314190566,Gary,Miller,M,62,M,21 Peninsula Ct,,Napa,Napa,CA,94559,O,S,$250000 +,750-799
+8314190566,Leslie S,Miller,F,59,M,21 Peninsula Ct,,Napa,Napa,CA,94559,O,S,$250000 +,750-799
+8317611680,Benjamin N,Potkin,F,67,S,1595 Soquel Dr,Ste 360,Santa Cruz,Santa Cruz,CA,95065,U,U,$75000 - $99999,Unknown
+8323358827,James B,Vanflandern,M,87,M,6002 Stirrup Rd,,Cincinnati,Hamilton,OH,45244,O,P,$200000 - $249999,750-799
+8323537373,Sajini,Mathew,F,61,M,6014 Greenway Manor Ln,,Spring,Harris,TX,77373,O,N,$100000 - $149999,650-699
+8323537373,Sherin,Mathew,U,32,M,6014 Greenway Manor Ln,,Spring,Harris,TX,77373,O,N,$100000 - $149999,Unknown
+8323801405,Elizabeth H,Ducote,F,63,M,123 Bayshore Dr,,Hemphill,Sabine,TX,75948,O,F,$35000 - $39999,750-799
+8327277331,Peter C,Wyatt,U,75,M,4080 Longwood Cir,,Gulf Breeze,Santa Rosa,FL,32563,O,P,$100000 - $149999,750-799
+8433778637,Francoise M,Parker,F,47,S,1738 Pierce St,,Charleston,Berkeley,SC,29492,O,S,$100000 - $149999,700-749
+8435480311,Marilyn M,Earle,F,73,S,10 Old Country Roses,,Okatie,Beaufort,SC,29909,O,L,$100000 - $149999,750-799
+8437924074,Ashley,Abide,F,43,S,31 Bogard St,,Charleston,Charleston,SC,29403,O,U,$50000 - $54999,700-749
+8455978590,Ana,Uriondo,F,54,M,4 Marlene Ct,,Newburgh,Orange,NY,12550,O,N,$100000 - $149999,650-699
+8455978590,Evelyn A,Uriondo,F,28,S,4 Marlene Ct,,Newburgh,Orange,NY,12550,O,N,$100000 - $149999,650-699
+8455978590,Rafael,Uriondo Jr,M,56,M,4 Marlene Ct,,Newburgh,Orange,NY,12550,O,N,$100000 - $149999,650-699
+8456615762,Maren J,Metcalf,F,35,S,53 Rokeby Rd,,Red Hook,Dutchess,NY,12571,O,K,$175000 - $199999,750-799
+8502070388,Dale A,Norse,M,62,M,410 Cumberland Ave,,Gulf Breeze,Santa Rosa,FL,32561,O,O,$150000 - $174999,650-699
+8502641322,Brittany S,Crawford,F,37,S,621 Dub Rd,,Tallahassee,Leon,FL,32305,O,D,$75000 - $99999,550-599
+8502641322,Dorothea L,Crawford,F,58,S,621 Dub Rd,,Tallahassee,Leon,FL,32305,O,D,$75000 - $99999,500-549
+8502880228,Catherine M,Bracey,F,58,M,4848 Timber Ridge Dr,,Milton,Santa Rosa,FL,32571,O,N,$100000 - $149999,800+
+8502880228,Ryan E,Bracey,M,25,S,4848 Timber Ridge Dr,,Milton,Santa Rosa,FL,32571,O,N,$100000 - $149999,700-749
+8502880228,Terance P,Bracey,M,58,M,4848 Timber Ridge Dr,,Milton,Santa Rosa,FL,32571,O,N,$100000 - $149999,800+
+8505599557,Kaitlyn M,Tafuri,F,37,U,3931 San Jose Blvd,,Jacksonville,Duval,FL,32207,O,N,$75000 - $99999,700-749
+8505599557,Kathleen S,Tafuri,F,67,S,3931 San Jose Blvd,,Jacksonville,Duval,FL,32207,O,N,$75000 - $99999,700-749
+8505599557,Nicole,Tafuri,F,40,U,3931 San Jose Blvd,,Jacksonville,Duval,FL,32207,O,N,$75000 - $99999,700-749
+8506023494,Cassandra E,Collins,F,65,S,908 N V St,,Pensacola,Escambia,FL,32505,U,U,$10000 - $14999,Unknown
+8506023494,Harriet N,Collins,F,36,S,908 N V St,,Pensacola,Escambia,FL,32505,R,U,$10000 - $14999,500-549
+8506023494,Harriet N,Page,F,36,U,908 N V St,,Pensacola,Escambia,FL,32505,O,C,$30000 - $34999,500-549
+8582321222,Shana M,Henderson,F,55,M,39301 Shree Rd,,Temecula,Riverside,CA,92591,O,R,$150000 - $174999,600-649
+8582321222,Sierra,Henderson,F,25,S,39301 Shree Rd,,Temecula,Riverside,CA,92591,O,R,$150000 - $174999,600-649
+8587523903,Michael E,Bach,M,59,S,4528 Hazeltine Ave,Apt 9,Sherman Oaks,Los Angeles,CA,91423,U,U,$35000 - $39999,700-749
+8587524545,Chris,Grasso,U,57,S,7823 Rancho Fanita Dr,Unit F,Santee,San Diego,CA,92071,O,N,$60000 - $64999,600-649
+8603675077,Kailey,Cagney,F,31,U,116 High St,,Manchester,Hartford,CT,6040,O,I,$50000 - $54999,700-749
+8622027665,Jesse N,Rosen,M,39,M,600 Carpenter Fletcher Rd,,Durham,Durham,NC,27713,O,M,$75000 - $99999,650-699
+8622027665,Rachel A,Rosen,F,38,M,600 Carpenter Fletcher Rd,,Durham,Durham,NC,27713,O,M,$75000 - $99999,650-699
+8643820638,Heidi A,Barnett,F,26,U,116 Druid St,,Greenville,Greenville,SC,29609,O,K,$100000 - $149999,650-699
+8643820638,Holly E,Barnett,F,35,S,116 Druid St,,Greenville,Greenville,SC,29609,O,K,$100000 - $149999,650-699
+8704217558,Cathy,Zulker,F,58,S,196 Cody Creek Pl,,Mountain Home,Baxter,AR,72653,O,N,$75000 - $99999,600-649
+8704217558,James,Zulker,M,31,S,196 Cody Creek Pl,,Mountain Home,Baxter,AR,72653,O,N,$75000 - $99999,Unknown
+8704217558,Thomas,Zulker,M,28,S,196 Cody Creek Pl,,Mountain Home,Baxter,AR,72653,O,N,$75000 - $99999,Unknown
+8708972372,Tiffany B,Ryan,F,44,M,107 N Rockingchair Rd,,Paragould,Greene,AR,72450,U,U,$60000 - $64999,750-799
+9012929663,Brittany,Brown,F,35,S,8917 River Meadow Dr,,Cordova,Shelby,TN,38018,O,P,$100000 - $149999,650-699
+9012929663,Marcus F,Brown,M,60,M,8917 River Meadow Dr,,Cordova,Shelby,TN,38018,O,P,$100000 - $149999,650-699
+9037150748,Jordan,Clipson,M,28,S,2720 Willow Bnd,,Paris,Lamar,TX,75462,O,H,$75000 - $99999,Unknown
+9037150748,Julianna S,Clipson,F,27,S,2720 Willow Bnd,,Paris,Lamar,TX,75462,O,H,$75000 - $99999,Unknown
+9042521123,Dawn,Ryan,F,58,S,183 Deltona Blvd,,Saint Augustine,Saint Johns,FL,32086,R,U,$30000 - $34999,650-699
+9042521123,Kelly L,Ryan,F,37,S,183 Deltona Blvd,,Saint Augustine,Saint Johns,FL,32086,R,U,$30000 - $34999,650-699
+9083139927,Samira R,Castro,F,33,U,276 Randolph St,,Carteret,Middlesex,NJ,7008,U,U,$45000 - $49999,650-699
+9083914857,Adilia,Sama,F,59,M,1103 Wynns Rd,,Sanford,Lee,NC,27330,O,O,$100000 - $149999,650-699
+9083914857,Samuel,Sama,M,49,M,1103 Wynns Rd,,Sanford,Lee,NC,27330,O,O,$100000 - $149999,650-699
+9084610853,Julia,Regula,F,30,S,35 Arbach Ln,,Englishtown,Monmouth,NJ,7726,O,O,$200000 - $249999,700-749
+9087235231,Aparna,Raghu,F,27,S,45 Cambridge Dr,,Short Hills,Essex,NJ,7078,O,U,$250000 +,750-799
+9087235231,Malini K,Raghu,F,59,M,45 Cambridge Dr,,Short Hills,Essex,NJ,7078,O,U,$250000 +,750-799
+9087235231,Shweta,Raghu,F,30,S,45 Cambridge Dr,,Short Hills,Essex,NJ,7078,O,U,$250000 +,750-799
+9087235231,Shweta,Raghu,F,30,S,45 Cambridge Dr,,Short Hills,Essex,NJ,7078,O,U,$250000 +,750-799
+9087972750,Christinia M,Green,F,38,S,1200 Gelwood Ave,,Orlando,Orange,FL,32807,O,G,$35000 - $39999,700-749
+9092058096,Amanda,Patterson,F,35,S,6133 Hudson Ave,,San Bernardino,San Bernardino,CA,92404,O,N,$55000 - $59999,750-799
+9095061247,Maximino,Herrera,M,76,S,707 Carpenters Way,Apt 13,Lakeland,Polk,FL,33809,R,U,$45000 - $49999,550-599
+9098155961,Robert W,Ciechoski,M,71,M,7631 Layton St,,Rancho Cucamonga,San Bernardino,CA,91730,O,Q,$100000 - $149999,700-749
+9099945943,Dana,Mayfield,F,1,U,29677 Sw Naples Dr,,Wilsonville,Clackamas,OR,97070,O,R,Unknown,Unknown
+9099945943,David,Mayfield,M,72,U,29677 Sw Naples Dr,,Wilsonville,Clackamas,OR,97070,O,R,Unknown,Unknown
+9099945943,Grant,Mayfield,M,45,S,29677 Sw Naples Dr,,Wilsonville,Clackamas,OR,97070,O,R,Unknown,Unknown
+9104349693,Amber N,Spencer,F,31,S,103 Glenmore Dr,,Rockingham,Richmond,NC,28379,R,U,Under $10000,600-649
+9104349693,Chyna J,Spencer,F,26,S,103 Glenmore Dr,,Rockingham,Richmond,NC,28379,R,U,Under $10000,600-649
+9107590514,Clarence D,Maxwell Iii,M,83,M,1305 Yaupon Dr,,Fayetteville,Cumberland,NC,28312,O,L,$100000 - $149999,800+
+9107590514,Doug,Maxwell,M,83,M,1305 Yaupon Dr,,Fayetteville,Cumberland,NC,28312,O,L,$100000 - $149999,800+
+9134812538,Justin,Rose,M,43,S,2308 Sunset Lake Dr,,Emporia,Lyon,KS,66801,O,M,$100000 - $149999,650-699
+9135942454,Tara J,Guss,F,52,S,12833 S Seminole Dr,,Olathe,Johnson,KS,66062,O,H,$15000 - $19999,750-799
+9136602520,Amy,Ricketts,F,41,U,3728 Thompson Cir,,Kansas City,Wyandotte,KS,66103,O,N,$50000 - $54999,Unknown
+9136602520,Kyle,Ricketts,M,43,U,3728 Thompson Cir,,Kansas City,Wyandotte,KS,66103,O,N,$50000 - $54999,Unknown
+9152523280,Mallela,Ramirez,F,48,S,12432 Angie Bombach Ave,,El Paso,El Paso,TX,79928,O,G,$55000 - $59999,700-749
+9152523280,Mario A,Ramirez,M,47,M,3925 Panama Way,,El Paso,El Paso,TX,79922,O,I,$75000 - $99999,700-749
+9152523280,Mayela,Ramirez,F,48,S,12432 Angie Bombach Ave,,El Paso,El Paso,TX,79928,O,G,$55000 - $59999,550-599
+9152523280,Vianey,Ramirez,F,50,M,3925 Panama Way,,El Paso,El Paso,TX,79922,O,I,$75000 - $99999,700-749
+9165410299,Musrrat,Ashfaq,F,73,M,7320 Rock Creek Way,,Sacramento,Sacramento,CA,95824,O,E,$40000 - $44999,750-799
+9167498415,Harneet,Nagra,U,24,S,1861 Casterbridge Dr,,Roseville,Placer,CA,95747,O,R,$200000 - $249999,650-699
+9176583316,Kyoko,Yamamura,F,43,S,480 Saint Marks Ave,Apt 401,Brooklyn,Kings,NY,11238,R,U,$30000 - $34999,650-699
+9176844285,Birgitte,Rasmussen,F,57,S,1120 E Kennedy Blvd,Unit 1127,Tampa,Hillsborough,FL,33602,O,M,$175000 - $199999,550-599
+9176844285,Ingrid,Ramirez,F,29,U,1120 E Kennedy Blvd,Unit 1227,Tampa,Hillsborough,FL,33602,O,M,Unknown,650-699
+9178150403,Gucim,Gjonbalaj,U,37,M,1834 Hone Ave,,Bronx,Bronx,NY,10461,O,Q,$100000 - $149999,600-649
+9178151455,Susannah M,Whitcher,M,41,S,2000 Ocean Ave,Apt 4D,Brooklyn,Kings,NY,11230,R,U,$30000 - $34999,750-799
+9182440155,Jonathan W,Pooler,M,38,S,502 N Bell St,,Vinita,Craig,OK,74301,R,U,$30000 - $34999,700-749
+9192405548,Solomon H,Kobes,M,50,M,6205 Farrington Rd,Apt G13,Chapel Hill,Orange,NC,27517,U,U,$175000 - $199999,Unknown
+9195939676,Catherine,Kalainikas,F,80,M,113 Danagher Ct,,Holly Springs,Wake,NC,27540,O,Q,$200000 - $249999,700-749
+9287100094,Dena L,Maiolo,F,65,M,421 Gail Gardner Way,,Prescott,Yavapai,AZ,86305,O,M,$75000 - $99999,650-699
+9287100094,Dena L,Maiolo,F,65,M,421 Gail Gardner Way,,Prescott,Yavapai,AZ,86305,O,M,$75000 - $99999,650-699
+9287100094,Frank A,Maiolo,M,69,S,421 Gail Gardner Way,,Prescott,Yavapai,AZ,86305,O,M,$75000 - $99999,650-699
+9287100094,Jason,Maiolo,M,31,S,421 Gail Gardner Way,,Prescott,Yavapai,AZ,86305,O,M,$75000 - $99999,650-699
+9287100094,Sean A,Maiolo,M,41,S,421 Gail Gardner Way,,Prescott,Yavapai,AZ,86305,O,M,$75000 - $99999,650-699
+9314724270,Cheryl A,Surace,F,46,M,137 Wynwood Dr,Apt C,Clarksville,Montgomery,TN,37042,U,U,$65000 - $74999,Unknown
+9314724270,Guy,Surace,M,65,M,137 Wynwood Dr,Apt C,Clarksville,Montgomery,TN,37042,U,U,$65000 - $74999,Unknown
+9372452365,Mark E,Brown,M,34,S,1036 Maiden Pl,,Dayton,Montgomery,OH,45417,O,D,Under $10000,600-649
+9373292810,Jeremy J,Hatton,M,48,S,420 Scarborough Ct,,New Lebanon,Montgomery,OH,45345,O,E,$50000 - $54999,600-649
+9375205957,Lashauna D,Johnson,U,33,S,713 Bradfield Dr,,Dayton,Montgomery,OH,45426,O,U,$25000 - $29999,550-599
+9376156015,Donald,Inman,M,38,U,10811 Little Turtle Way,,Sidney,Shelby,OH,45365,O,E,$35000 - $39999,650-699
+9419148528,Akila E,Washington,F,41,S,1020 26Th Street Ct E,,Palmetto,Manatee,FL,34221,O,I,$45000 - $49999,700-749
+9419148528,Karyn,Washington,F,66,S,1020 26Th Street Ct E,,Palmetto,Manatee,FL,34221,O,I,$45000 - $49999,700-749
+9493069462,Daniel J,Winant,M,36,S,19 Seaspray S,,Laguna Niguel,Orange,CA,92677,O,U,$65000 - $74999,Unknown
+9493069462,Dhyana R,Winant,F,71,M,19 Seaspray S,,Laguna Niguel,Orange,CA,92677,O,U,$65000 - $74999,Unknown
+9493069462,Paul R,Winant,M,52,M,19 Seaspray S,,Laguna Niguel,Orange,CA,92677,O,U,$65000 - $74999,Unknown
+9498129209,Allison,Gaona,F,30,U,1814 Harris Ave,,Kailua,Honolulu,HI,96734,U,U,$20000 - $24999,650-699
+9513674446,Margaret N,Wild,F,1,U,5709 Durango Rd,,Riverside,Riverside,CA,92506,O,Q,$75000 - $99999,650-699
+9515911201,Edwardo,Mandujano,M,36,S,435 Serrana Rd,,Perris,Riverside,CA,92570,O,P,$75000 - $99999,600-649
+9515959347,Jeffrey,Milliken,M,1,U,4585 S Anniston Ave,,Ontario,San Bernardino,CA,91761,O,R,Unknown,Unknown
+9522241919,Barbara A,Odom,F,56,M,6390 Pleasant View Cv,,Chanhassen,Carver,MN,55317,O,R,$250000 +,650-699
+9529131776,Amy L,Gunty,F,38,S,3579 Blue Jay Way,Apt 202,Saint Paul,Dakota,MN,55123,O,G,$30000 - $34999,700-749
+9542494030,Medgine,Colin,F,39,M,1913 Sw 95Th Ter,,Hollywood,Broward,FL,33025,U,U,$55000 - $59999,600-649
+9545894520,Jenell N,Hylton,F,30,M,7745 Embassy Blvd,,Hollywood,Broward,FL,33023,O,N,$40000 - $44999,650-699
+9545894520,John A,Hylton,M,61,M,7745 Embassy Blvd,,Hollywood,Broward,FL,33023,O,N,$40000 - $44999,650-699
+9546381348,Ricky,Wyche,M,37,S,4178 Sw Tuscol St,,Port Saint Lucie,Saint Lucie,FL,34953,O,F,$60000 - $64999,600-649
+9548493174,Andre R,Smith,M,30,S,7828 Silverado Ct,,Hollywood,Broward,FL,33024,O,Q,$200000 - $249999,650-699
+9549997202,Audrey L,Eisner,F,54,M,1331 Nw 69Th Ave,,Hollywood,Broward,FL,33024,O,M,$75000 - $99999,650-699
+9549997202,Brandy L,Eisner,F,32,S,1331 Nw 69Th Ave,,Hollywood,Broward,FL,33024,O,M,$75000 - $99999,650-699
+9549997202,Michael A,Eisner,M,55,M,1331 Nw 69Th Ave,,Hollywood,Broward,FL,33024,O,M,$75000 - $99999,650-699
+9565337375,Carina E,Gonzalez,F,47,S,1503 N 11Th St,,Penitas,Hidalgo,TX,78576,O,U,Under $10000,500-549
+9566392631,Jahaziel,Villegas,F,31,S,2847 Avila St,,Brownsville,Cameron,TX,78520,R,U,$55000 - $59999,650-699
+9566392631,Paulino,Villegas,M,29,S,2847 Avila St,,Brownsville,Cameron,TX,78520,R,U,$55000 - $59999,650-699
+9569751748,Daniel,Garza,M,53,S,1731 Christian Ct,,Weslaco,Hidalgo,TX,78596,O,G,$65000 - $74999,650-699
+9702315240,Carol L,Aslor,F,73,S,2618 Little Bear Ct,,Fort Collins,Larimer,CO,80525,O,Q,$100000 - $149999,750-799
+9732070507,Esther,Omoruyi,F,50,S,2518 Clover Ter,,Union,Union,NJ,7083,O,O,$55000 - $59999,700-749
+9782897608,Luigi,Spagnuolo,M,65,M,12 Rogers Brk W,,Andover,Essex,MA,1810,O,S,$250000 +,800+
+9788047338,Robert O,Onchaga,M,49,S,11227 Campo Del Oso Ave Ne,,Albuquerque,Bernalillo,NM,87123,O,J,$20000 - $24999,750-799
+9788084170,Adina M,Scola,F,32,S,5 Sesame St,,Billerica,Middlesex,MA,1821,U,U,$250000 +,750-799
+9788084170,Barbara,Scola,F,56,M,5 Sesame St,,Billerica,Middlesex,MA,1821,U,U,$250000 +,750-799
+9792192880,Patricia,Dominguez,F,36,S,1001 Harvey Rd,Apt 30,College Station,Brazos,TX,77840,U,U,$50000 - $54999,600-649
+9794929268,Lou A,Roquet,M,64,M,Po Box 14983,,College Station,Brazos,TX,77841,U,U,$25000 - $29999,800+
+9794929268,Warren P,Roquet,M,69,M,Po Box 14983,,College Station,Brazos,TX,77841,U,U,$25000 - $29999,800+
+9852654032,Barlean,Stalks,U,59,M,185 W Pinewood Dr,,Slidell,Saint Tammany,LA,70458,O,M,Unknown,800+
+9853131093,Daija,Johnson,F,25,U,3110 Highway 1,,Labadieville,Assumption,LA,70372,U,U,$40000 - $44999,650-699
+9854670254,Alexus,Barze,F,23,U,785 E Willow St,,Ponchatoula,Tangipahoa,LA,70454,O,H,$65000 - $74999,under 499
+9854670254,Helen C,Barze,F,75,M,785 E Willow St,,Ponchatoula,Tangipahoa,LA,70454,O,H,$65000 - $74999,under 499
+9854670254,Shenequal,Barze,U,28,S,785 E Willow St,,Ponchatoula,Tangipahoa,LA,70454,O,H,$65000 - $74999,under 499
+9857896004,William H,Griffith,M,41,S,11484 Browns Rd,,Folsom,Saint Tammany,LA,70437,U,U,$35000 - $39999,Unknown
+9897374840,Nichole L,Mclachlan,F,42,M,3811 Concord St,,Midland,Midland,MI,48642,O,G,$65000 - $74999,Unknown
+9897736918,Sandra,Westphal,F,84,M,41862 Sunnydale Ln,,Northville,Wayne,MI,48168,O,P,$100000 - $149999,800+
