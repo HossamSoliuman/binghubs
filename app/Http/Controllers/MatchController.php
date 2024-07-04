@@ -6,15 +6,13 @@ use App\Models\File as ModelsFile;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
-use Illuminate\Support\Facades\Storage;
 use App\Traits\ManagesFiles;
-use Illuminate\Database\Schema\Builder;
 
 class MatchController extends Controller
 {
     use ManagesFiles;
 
-    
+
     public function matchCSVWithDatabase(Request $request)
     {
         $selectedTable = $request->input('table');
@@ -22,23 +20,20 @@ class MatchController extends Controller
         $csvFilePath = public_path($inputFile);
         $csvData = array_map('str_getcsv', file($csvFilePath));
         $inputFileName = pathinfo($inputFile, PATHINFO_FILENAME);
-        $outputFileName = $inputFileName . '_output.csv';
         $outputDirectory = public_path('files/output');
 
         if (!File::exists($outputDirectory)) {
             File::makeDirectory($outputDirectory);
         }
+
+        $outputFileName = $this->generateUniqueFileName($outputDirectory, $inputFileName, 'csv');
         $outputCsvFilePath = $outputDirectory . '/' . $outputFileName;
         $outputCsvData = [];
 
-        // Get the header row from the CSV and database fields from the table
         $headerRow = array_shift($csvData);
         $dbFields = DB::getSchemaBuilder()->getColumnListing($selectedTable);
-        $dbFields = array_filter($dbFields, function ($field) {
-            return $field !== 'id';
-        });
+        $dbFields = array_filter($dbFields, fn ($field) => $field !== 'id');
 
-        // Loop through CSV data and match with database records
         foreach ($csvData as $rowData) {
             $outputRow = [];
             $outputRow[] = $rowData[0];
@@ -48,7 +43,6 @@ class MatchController extends Controller
                 $whereClause[] = [$field, $rowData[array_search($field, $headerRow)]];
             }
 
-            // Use first() to retrieve a single record, if it exists
             $records = DB::table($selectedTable)
                 ->select($dbFields)
                 ->where($whereClause)
@@ -65,7 +59,6 @@ class MatchController extends Controller
             }
         }
 
-        // Add the database fields as the first row in the output CSV
         array_unshift($outputCsvData, $dbFields);
 
         $outputCsvFile = fopen($outputCsvFilePath, 'w');
@@ -78,9 +71,24 @@ class MatchController extends Controller
             'input_file' => $inputFile,
             'output_file' => 'files/output/' . $outputFileName,
         ]);
+
         session()->flash('success', 'CSV matching job is complete. You can download the result.');
         return redirect()->route('index');
     }
+
+    private function generateUniqueFileName($directory, $baseName, $extension)
+    {
+        $counter = 1;
+        $fileName = "{$baseName}.{$extension}";
+
+        while (file_exists("{$directory}/{$fileName}")) {
+            $fileName = "{$baseName}({$counter}).{$extension}";
+            $counter++;
+        }
+
+        return $fileName;
+    }
+
 
 
 

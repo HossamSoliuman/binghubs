@@ -6,27 +6,24 @@ use Illuminate\Support\Facades\File;
 
 trait ManagesFiles
 {
-    /**
-     * Upload a file to the specified directory in the public disk.
-     *
-     * @param  \Illuminate\Http\UploadedFile  $file
-     * @param  string  $directory
-     * @return string|null
-     */
     public function uploadFile($file, $directory)
     {
         $originalName = pathinfo($file->getClientOriginalName(), PATHINFO_FILENAME);
-        $fileName = $originalName . '_' . time() . '.' . $file->extension();
+        $extension = $file->extension();
+        $fileName = $originalName . '.' . $extension;
+        $filePath = $directory . '/' . $fileName;
+        $counter = 1;
+
+        while (file_exists($filePath)) {
+            $fileName = $originalName . '(' . $counter . ').' . $extension;
+            $filePath = $directory . '/' . $fileName;
+            $counter++;
+        }
+
         $filePath = $file->move($directory, $fileName);
         return $filePath;
     }
 
-    /**
-     * Delete a file from the specified directory in the public disk.
-     *
-     * @param  string  $filePath
-     * @return bool
-     */
     public function deleteFile($filePath)
     {
 

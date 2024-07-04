@@ -100,29 +100,22 @@
                             <tr>
                                 <td>{{ basename($file->input_file) }}</td>
                                 <td>{{ basename($file->output_file) }}</td>
-
-                                <td class="d-flex">
-                                    <a href="{{ url($file->output_file) }}" download class="btn btn-info mr-1">Download</a>
-                                    {{-- <button type="button" class="btn btn-primary" data-toggle="modal"
-                                    data-target="#exampleModal">
-                                    Extract --}}
-                                    </button>
+                                <td class="d-flex align-items-center">
+                                    <a href="{{ url($file->output_file) }}" download class="btn btn-sm btn-white me-2">Download</a>
                                     <form action="{{ route('files.destroy', ['file' => $file->id]) }}" method="post">
                                         @method('DELETE')
                                         @csrf
-                                        <button type="submit" class="btn btn-danger ml-2">Delete</button>
+                                        <button type="submit" class="btn btn-sm btn-dark">Delete</button>
                                     </form>
-
-
                                 </td>
                             </tr>
-                            {{-- @include('files.filter') --}}
                         @endforeach
                     </tbody>
                 </table>
                 {{ $files->links() }}
             </div>
         </div>
-    </div>
+        
+
     </div>
 @endsection

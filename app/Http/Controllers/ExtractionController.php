@@ -3,19 +3,16 @@
 namespace App\Http\Controllers;
 
 use App\Models\Extraction;
-use App\Http\Requests\StoreExtractionRequest;
-use App\Http\Requests\UpdateExtractionRequest;
-use App\Http\Resources\ExtractionResource;
-use App\Http\Traits\ManagesFiles;
 use App\Models\File;
 use App\Models\Table;
-use Hossam\Licht\Controllers\LichtBaseController;
+use App\Traits\ManagesFiles;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 class ExtractionController extends Controller
 {
     use ManagesFiles;
+
     public function index()
     {
         $tables = Table::all();
@@ -24,108 +21,124 @@ class ExtractionController extends Controller
         return view('extractions.index', compact('extractions', 'tables', 'files'));
     }
 
-
     public function store(Request $request)
     {
         $filter = $request->filter;
         $type = $request->extract_from_type;
-        if ($type == 'existing_file') {
-            return $this->filterFile('files/output/' . $request->existing_file, $filter);
-        } else if ($type == 'uploaded_file') {
-            $file_path = $this->uploadFile($request->file, 'extraction_uploads');
-            return $this->filterFile($file_path, $filter);
-        } else {
-            return  $this->filterTable($request->table, $filter);
-        }
 
-        $extraction = Extraction::create($request->validated());
-        return $this->successResponse(ExtractionResource::make($extraction));
+        switch ($type) {
+            case 'existing_file':
+                return $this->processExistingFile($request->existing_file, $filter);
+            case 'uploaded_file':
+                return $this->processUploadedFile($request->file, $filter);
+            default:
+                return $this->processTable($request->table, $filter);
+        }
     }
 
     public function destroy(Extraction $extraction)
     {
         $this->deleteFile($extraction->extraction_result);
         $extraction->delete();
+        return redirect()->route('extractions.index');
+    }
+
+    private function processExistingFile($existingFile, $filter)
+    {
+        return $this->filterFile('files/output/' . $existingFile, $filter, true);
+    }
+
+    private function processUploadedFile($file, $filter)
+    {
+        $filePath = $this->uploadFile($file, 'extraction_uploads');
+        return $this->filterFile($filePath, $filter);
+    }
+
+    private function processTable($table, $filter)
+    {
+        return $this->filterTable($table, $filter);
+    }
+
+    private function filterFile($filePath, $filter, $isExistingFile = false)
+    {
+        $uniqueFilePath = $isExistingFile ? public_path($filePath) : $this->getUniqueFilePath($filePath);
+
+        if (!$isExistingFile && file_exists(public_path($filePath))) {
+            rename(public_path($filePath), $uniqueFilePath);
+        }
+
+        $outputFilePath = $this->generateOutputFilePath($uniqueFilePath);
+
+        if (!$this->applyFileFilters($uniqueFilePath, $outputFilePath, $filter)) {
+            return response()->json(['error' => 'Error processing file.'], 500);
+        }
+
+        Extraction::create([
+            'extracted_from_type' => 'file',
+            'extracted_from' => $filePath,
+            'extraction_result' => 'extracted_files/' . basename($outputFilePath),
+        ]);
+
         return $this->index();
     }
-    public function filterFile($file, $filter)
+
+    private function getUniqueFilePath($filePath)
     {
-        $inputFilePath = public_path($file);
-        $inputFileName = pathinfo($inputFilePath, PATHINFO_FILENAME);
-        $inputFileExt = pathinfo($inputFilePath, PATHINFO_EXTENSION);
+        $fileName = pathinfo($filePath, PATHINFO_FILENAME);
+        $fileExt = pathinfo($filePath, PATHINFO_EXTENSION);
 
+        $uniqueFilePath = public_path($filePath);
         $counter = 1;
-        $uniqueInputFilePath = $inputFilePath;
 
-        while (file_exists($uniqueInputFilePath)) {
-            $uniqueInputFilePath = public_path($inputFileName . '(' . $counter . ').' . $inputFileExt);
+        while (file_exists($uniqueFilePath)) {
+            $uniqueFilePath = public_path("{$fileName}({$counter}).{$fileExt}");
             $counter++;
         }
 
-        rename($inputFilePath, $uniqueInputFilePath);
+        return $uniqueFilePath;
+    }
 
-        $outputFileName = $inputFileName . '.csv';
-        $outputFilePath = public_path('extracted_files/' . $outputFileName);
+    private function generateOutputFilePath($inputFilePath)
+    {
+        $fileName = pathinfo($inputFilePath, PATHINFO_FILENAME);
+        $outputFilePath = public_path('extracted_files/' . $fileName . '.csv');
         $counter = 1;
 
         while (file_exists($outputFilePath)) {
-            $outputFileName = $inputFileName . '(' . $counter . ').csv';
-            $outputFilePath = public_path('extracted_files/' . $outputFileName);
+            $outputFilePath = public_path('extracted_files/' . $fileName . "({$counter}).csv");
             $counter++;
         }
 
-        $inputFileHandle = fopen($uniqueInputFilePath, 'r');
-        if ($inputFileHandle === false) {
-            return "Error opening the input file.";
+        return $outputFilePath;
+    }
+
+    private function generateTableOutputFilePath($table)
+    {
+        $outputFilePath = public_path("extracted_files/{$table}.csv");
+        $counter = 1;
+
+        while (file_exists($outputFilePath)) {
+            $outputFilePath = public_path("extracted_files/{$table}({$counter}).csv");
+            $counter++;
         }
 
-        $outputCsvFile = fopen($outputFilePath, 'w');
-        if ($outputCsvFile === false) {
-            return "Error creating the output file.";
+        return $outputFilePath;
+    }
+
+    private function applyFileFilters($inputFilePath, $outputFilePath, $filter)
+    {
+        if (!($inputFileHandle = fopen($inputFilePath, 'r')) || !($outputCsvFile = fopen($outputFilePath, 'w'))) {
+            return false;
         }
 
         $headerRow = fgetcsv($inputFileHandle);
+        fputcsv($outputCsvFile, $headerRow);
 
-        $stateIndex = array_search('state', $headerRow);
-        $dncIndex = array_search('dnc', $headerRow);
-        $ageIndex = array_search('age', $headerRow);
-        $creditScoreIndex = array_search('creditscore', $headerRow);
-        $incomeIndex = array_search('income_range', $headerRow);
-        $genderIndex = array_search('gender', $headerRow);
-
-        $stateFilter = isset($filter['states']) ? $filter['states'] : null;
-        $dncFilter = isset($filter['dnc']) ? $filter['dnc'] : 'All';
-        $minAgeFilter = isset($filter['min_age']) ? $filter['min_age'] : null;
-        $maxAgeFilter = isset($filter['max_age']) ? $filter['max_age'] : null;
-        $creditScoreFilter = isset($filter['credit']) ? $filter['credit'] : null;
-        $incomeFilter = isset($filter['income_range']) ? $filter['income_range'] : null;
-        $genderFilter = isset($filter['gender']) ? $filter['gender'] : null;
-
-        $writeHeader = true;
+        $indices = array_flip($headerRow);
+        $filters = $this->getFilters($filter, $indices);
 
         while (($rowData = fgetcsv($inputFileHandle)) !== false) {
-            if ($writeHeader) {
-                fputcsv($outputCsvFile, $headerRow);
-                $writeHeader = false;
-                continue;
-            }
-
-            $state = $stateIndex !== false ? $rowData[$stateIndex] : null;
-            $dncValue = $dncIndex !== false ? $rowData[$dncIndex] : null;
-            $age = $ageIndex !== false ? $rowData[$ageIndex] : null;
-            $creditScore = $creditScoreIndex !== false ? $rowData[$creditScoreIndex] : null;
-            $income = $incomeIndex !== false ? $rowData[$incomeIndex] : null;
-            $gender = $genderIndex !== false ? $rowData[$genderIndex] : null;
-
-            $statePass = !$stateFilter || in_array($state, explode(',', $stateFilter));
-            $dncPass = is_null($dncFilter) || $dncFilter === 'All' || $dncValue === $dncFilter;
-            $minAgePass = is_null($minAgeFilter) || $age >= $minAgeFilter;
-            $maxAgePass = is_null($maxAgeFilter) || $age <= $maxAgeFilter;
-            $creditScorePass = !$creditScoreFilter || in_array($creditScore, $creditScoreFilter);
-            $incomePass = !$incomeFilter || in_array($income, $incomeFilter);
-            $genderPass = !$genderFilter || in_array($gender, $genderFilter);
-
-            if ($statePass && $dncPass && $minAgePass && $maxAgePass && $creditScorePass && $incomePass && $genderPass) {
+            if ($this->passesFilters($rowData, $filters, $indices)) {
                 fputcsv($outputCsvFile, $rowData);
             }
         }
@@ -133,16 +146,8 @@ class ExtractionController extends Controller
         fclose($inputFileHandle);
         fclose($outputCsvFile);
 
-        Extraction::create([
-            'extracted_from_type' => 'file',
-            'extracted_from' => $file,
-            'extraction_result' => 'extracted_files/' . $outputFileName,
-        ]);
-
-        return $this->index();
+        return true;
     }
-
-
 
     public function filterTable($table, $filter)
     {
@@ -215,7 +220,7 @@ class ExtractionController extends Controller
         $counter = 1;
 
         while (file_exists($outputFilePath)) {
-            $outputFileName = 'filtered_table_' . $table . '(' . $counter . ').csv';
+            $outputFileName =  $table . '(' . $counter . ').csv';
             $outputFilePath = public_path('extracted_files/' . $outputFileName);
             $counter++;
         }
@@ -233,5 +238,85 @@ class ExtractionController extends Controller
         ]);
 
         return $this->index();
+    }
+    private function getFilters($filter, $indices)
+    {
+        return [
+            'state' => $this->parseFilter($filter['states'] ?? null, $indices),
+            'dnc' => $this->parseFilter($filter['dnc'] ?? 'All', $indices),
+            'age' => ['min' => $filter['min_age'] ?? null, 'max' => $filter['max_age'] ?? null],
+            'creditscore' => $this->parseFilter($filter['credit'] ?? null, $indices),
+            'income_range' => $this->parseFilter($filter['income_range'] ?? null, $indices),
+            'gender' => $this->parseFilter($filter['gender'] ?? null, $indices),
+        ];
+    }
+
+    private function parseFilter($filter, $indices)
+    {
+        if ($filter && is_string($filter)) {
+            return explode(',', $filter);
+        }
+        return $filter;
+    }
+
+    private function passesFilters($rowData, $filters, $indices)
+    {
+        return $this->passesStateFilter($rowData, $filters, $indices)
+            && $this->passesDncFilter($rowData, $filters, $indices)
+            && $this->passesAgeFilter($rowData, $filters, $indices)
+            && $this->passesCreditScoreFilter($rowData, $filters, $indices)
+            && $this->passesIncomeFilter($rowData, $filters, $indices)
+            && $this->passesGenderFilter($rowData, $filters, $indices);
+    }
+
+    private function passesStateFilter($rowData, $filters, $indices)
+    {
+        if (!isset($filters['state']) || !isset($indices['state'])) {
+            return true;
+        }
+        return in_array($rowData[$indices['state']], $filters['state']);
+    }
+
+    private function passesDncFilter($rowData, $filters, $indices)
+    {
+        if (!isset($filters['dnc']) || !isset($indices['dnc'])) {
+            return true;
+        }
+        $dncValue = $rowData[$indices['dnc']];
+        return $filters['dnc'] === 'All' || $dncValue === $filters['dnc'];
+    }
+
+    private function passesAgeFilter($rowData, $filters, $indices)
+    {
+        if (!isset($filters['age']) || !isset($indices['age'])) {
+            return true;
+        }
+        $ageValue = $rowData[$indices['age']];
+        return ($filters['age']['min'] === null || $ageValue >= $filters['age']['min'])
+            && ($filters['age']['max'] === null || $ageValue <= $filters['age']['max']);
+    }
+
+    private function passesCreditScoreFilter($rowData, $filters, $indices)
+    {
+        if (!isset($filters['creditscore']) || !isset($indices['creditscore'])) {
+            return true;
+        }
+        return in_array($rowData[$indices['creditscore']], $filters['creditscore']);
+    }
+
+    private function passesIncomeFilter($rowData, $filters, $indices)
+    {
+        if (!isset($filters['income_range']) || !isset($indices['income_range'])) {
+            return true;
+        }
+        return in_array($rowData[$indices['income_range']], $filters['income_range']);
+    }
+
+    private function passesGenderFilter($rowData, $filters, $indices)
+    {
+        if (!isset($filters['gender']) || !isset($indices['gender'])) {
+            return true;
+        }
+        return in_array($rowData[$indices['gender']], $filters['gender']);
     }
 }
