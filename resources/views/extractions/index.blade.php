@@ -11,7 +11,7 @@
                 <thead>
                     <tr>
                         <th scope="col">Extraction from type</th>
-                        <th scope="col">Extraction from file</th>
+                        <th scope="col">Extraction from name</th>
                         <th scope="col">Output File</th>
                         <th scope="col">Action</th>
                     </tr>
