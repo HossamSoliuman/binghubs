@@ -18,6 +18,6 @@ jobs:
           server: gutenblog.com
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /home/gutenb/public_html/gutenb/public_html/binghubs/ts
+          server-dir: /home/gutenb/public_html/gutenb/public_html/binghubs/ts/
           protocol: ftp
           log-level: verbose
