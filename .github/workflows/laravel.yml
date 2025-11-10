@@ -1,0 +1,23 @@
+name: Deploy to FTP
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  ftp-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get latest code
+        uses: actions/checkout@v3
+
+      - name: Upload to FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: gutenblog.com
+          username: binghubs@gutenblog.com
+          password: CriGyKgcPqix
+          server-dir: /home/gutenb/public_html/gutenb/public_html/binghubs/
+          protocol: ftp
+          log-level: verbose
