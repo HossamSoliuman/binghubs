@@ -20,5 +20,5 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: /home/gutenb/public_html/gutenb/public_html/binghubs/
           protocol: ftps
-          security: explicit
+          security: loose
           log-level: verbose
