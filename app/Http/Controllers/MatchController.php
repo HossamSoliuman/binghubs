@@ -31,6 +31,8 @@ class MatchController extends Controller
         $outputCsvData = [];
 
         $headerRow = array_shift($csvData);
+        $headerRow = array_map(fn($field) => preg_replace('/[[:^print:]]/', '', trim($field)), $headerRow);
+
         $dbFields = DB::getSchemaBuilder()->getColumnListing($selectedTable);
         $dbFields = array_filter($dbFields, fn ($field) => $field !== 'id');
 
