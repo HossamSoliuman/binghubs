@@ -16,8 +16,8 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: gutenblog.com
-          username: binghubs@gutenblog.com
-          password: CriGyKgcPqix
-          server-dir: /home/gutenb/public_html/gutenb/public_html/binghubs/
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: /home/gutenb/public_html/gutenb/public_html/binghubs/ts
           protocol: ftp
           log-level: verbose
