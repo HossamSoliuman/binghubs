@@ -25,20 +25,6 @@ use Symfony\Component\Finder\Iterator\FilecontentFilterIterator;
 Auth::routes([
     'register' => false
 ]);
-// Route::get('t', function () {
-//     User::create([
-//         'name' => 'Admin',
-//         // 'email' => 'admin@edifyseven.com',
-//         'email' => 'admin@gmail.com',
-//         'email_verified_at' => now(),
-//         // 'password' => Hash::make('Ye4oKoEa3Ro9llC'),
-//         'password' => Hash::make('password'),
-//         'remember_token' => 'jklj;joijklnkn',
-//         'role' => 'admin'
-//     ]);
-// });
-
-//test
 
 Route::middleware('auth')->group(function () {
 
